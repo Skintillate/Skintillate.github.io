@@ -1,0 +1,9 @@
+{%- comment -%}
+  Google Maps embed for the clinic. Loads lazily, so it costs nothing until the visitor scrolls near it.
+  The "Open in Google Maps" link below it also works when the embed is blocked (e.g. by privacy extensions).
+{%- endcomment -%}
+<div class="map-wrap">
+  <iframe class="map-frame" src="{{ clinic.maps_embed }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Map showing {{ clinic.name | escape }}, {{ clinic.address.locality }}, {{ clinic.address.city }}"></iframe>
+  <p class="map-link"><a href="{{ clinic.maps_url }}" rel="noopener" target="_blank">{% include icon.html name="pin" %}<span>{{ t.open_in_maps }}</span></a></p>
+</div>

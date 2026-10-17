@@ -37,8 +37,7 @@ hide_cta: true
           <p class="icon-line">{% include icon.html name="instagram" %}<a href="{{ clinic.instagram }}" rel="noopener" target="_blank">@{{ clinic.instagram_handle }}</a></p>
         </div>
       </div>
-      <iframe class="map-frame" src="{{ clinic.maps_embed }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-              title="Map showing Skintillate Skin Clinic, North Alagapuram, Salem"></iframe>
+      {% include map.html %}
     </div>
   </div>
 </section>

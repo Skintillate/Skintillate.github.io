@@ -246,7 +246,12 @@ h3 { font-size: 1.45rem; }
 .hours th, .hours td { text-align: left; padding: 8px 0; border-bottom: 1px solid var(--line); font-weight: 400; }
 .hours td { text-align: right; }
 .hours .closed td { color: var(--rose); }
+.map-wrap { margin-top: 24px; }
+.contact-layout .map-wrap { margin-top: 0; }
 .map-frame { border: 0; width: 100%; height: 420px; border-radius: var(--radius); display: block; background: var(--tint); }
+.map-link { margin: 12px 0 0; }
+.map-link a { display: inline-flex; align-items: center; gap: .5em; font-weight: 500; }
+@media (max-width: 640px) { .map-frame { height: 320px; } }
 .contact-layout { display: grid; gap: 24px; }
 .info-card a { overflow-wrap: anywhere; }
 .hours td { white-space: nowrap; padding-left: 12px; }
