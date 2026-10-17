@@ -1,0 +1,32 @@
+title: Dr. Kiruthika's Skintillate Skin Clinic
+url: https://skintillate.github.io
+baseurl: ""
+
+# Default language. Other languages live under /<lang>/ (e.g. /ta/) and are
+# linked to their English page through a shared `ref` in the front matter.
+lang: en
+languages: [en, ta]
+
+permalink: pretty
+markdown: kramdown
+kramdown:
+  auto_ids: true
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md
+  - CONTENT-REVIEW.md
+  - .bundle
+
+defaults:
+  - scope: { path: "" }
+    values: { layout: page, lang: en }
+  - scope: { path: "services" }
+    values: { layout: service, parent: services, schema_type: MedicalWebPage }
+  - scope: { path: "ta" }
+    values: { lang: ta }
+
+# Disable the default GitHub Pages theme; the site has its own layouts and CSS.
+theme: null

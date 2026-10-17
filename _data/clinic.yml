@@ -1,0 +1,40 @@
+# Single source of truth for the clinic's name, address, phone and hours.
+# Keep these exactly as they appear on the Google Business Profile.
+# Text that changes per language (address wording, day names) lives in _data/i18n/.
+
+name: Dr. Kiruthika's Skintillate Skin Clinic
+short_name: Skintillate Skin Clinic
+
+phone_display: +91 77088 74297
+phone_e164: "+917708874297"
+whatsapp: "917708874297"
+whatsapp_message: Hello, I would like to book an appointment at Skintillate Skin Clinic.
+email: kiruthikaskintillate@gmail.com
+instagram: https://www.instagram.com/dr_kiruthika_skintillate
+instagram_handle: dr_kiruthika_skintillate
+maps_url: https://maps.app.goo.gl/GX3gAo74VPKSAUvRA
+maps_embed: https://maps.google.com/maps?q=Dr.%20Kiruthika%27s%20Skintillate%20Skin%20Clinic%2C%20Salem&ll=11.6772035,78.1390042&z=16&output=embed
+
+address:
+  street: "No: 54, Srinivasa Complex, Nagaramalai Main Road, Dhurpathi Amman Kovil Opposite"
+  locality: North Alagapuram
+  city: Salem
+  region: Tamil Nadu
+  postal_code: "636016"
+  postal_code_display: 636 016
+  country: IN
+
+geo:
+  lat: 11.6772035
+  lng: 78.1390042
+
+hours:
+  days: [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
+  opens: "11:00"
+  closes: "19:00"
+
+doctor:
+  name: Dr. Kiruthika S.
+  qualifications: MBBS, MD (DVL), DNB (DVL)
+  registration: TNMC Reg. No. 117795
+  registration_number: "117795"

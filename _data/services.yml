@@ -1,0 +1,78 @@
+# Services in display order. `ref` matches the `ref` in each service page's front matter;
+# `slug` is the URL under /services/ (the same slug is used for every language).
+- ref: clinical-dermatology
+  slug: clinical-dermatology
+  group: dermatology
+  en:
+    name: Clinical Dermatology
+    blurb: Diagnosis and treatment of eczema, psoriasis, skin allergies, fungal infections and other skin conditions.
+
+- ref: acne
+  slug: acne-scar-treatment
+  group: dermatology
+  en:
+    name: Acne & Acne Scars
+    blurb: Treatment plans to control active acne, then peels, microneedling, subcision and laser to improve scars.
+
+- ref: pigmentation
+  slug: pigmentation-treatment
+  group: dermatology
+  en:
+    name: Pigmentation & Melasma
+    blurb: Care for melasma, dark spots, tanning and uneven skin tone with creams, peels and Q-switched laser.
+
+- ref: hair-loss
+  slug: hair-loss-treatment-prp-gfc
+  group: hair-nail
+  en:
+    name: Hair Loss (PRP & GFC)
+    blurb: Finding the cause of hair fall and treating it with medicines, PRP and GFC therapy.
+
+- ref: nail
+  slug: nail-disorders
+  group: hair-nail
+  en:
+    name: Nail Disorders
+    blurb: Fungal nail infections, ingrown nails, brittle or discoloured nails and nail changes from skin disease.
+
+- ref: electrosurgery
+  slug: electrosurgery-wart-skin-tag-removal
+  group: procedures
+  en:
+    name: Wart, Skin Tag & Mole Removal
+    blurb: Quick in-clinic removal of warts, skin tags, moles and similar growths by electrosurgery and electrofulguration.
+
+- ref: intralesional
+  slug: intralesional-injections
+  group: procedures
+  en:
+    name: Intralesional Injections
+    blurb: Medicine injected directly into keloids, thick scars, alopecia areata patches and cysts.
+
+- ref: laser
+  slug: laser-treatment
+  group: aesthetics
+  en:
+    name: Laser Treatments
+    blurb: Q-switched Nd:YAG, fractional CO₂ and diode lasers for pigmentation, scars, tattoos and hair removal.
+
+- ref: laser-hair-removal
+  slug: laser-hair-removal
+  group: aesthetics
+  en:
+    name: Laser Hair Removal
+    blurb: Long-term reduction of unwanted hair on the face and body with diode laser.
+
+- ref: chemical-peels
+  slug: chemical-peels
+  group: aesthetics
+  en:
+    name: Chemical Peels
+    blurb: Medical-grade peels for acne, pigmentation, dullness and fine lines.
+
+- ref: anti-ageing
+  slug: anti-ageing-botox-fillers
+  group: aesthetics
+  en:
+    name: Anti-Ageing, Botox & Fillers
+    blurb: Botulinum toxin, dermal fillers and skin rejuvenation for wrinkles, volume loss and tired-looking skin.

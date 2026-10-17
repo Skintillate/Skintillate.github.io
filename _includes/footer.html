@@ -1,0 +1,48 @@
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <p class="footer-name">{{ clinic.name }}</p>
+      <p>{{ t.footer_tagline }}</p>
+      <p class="footer-doctor">{{ clinic.doctor.name }}, {{ clinic.doctor.qualifications }}<br>{{ clinic.doctor.registration }}</p>
+    </div>
+
+    <div>
+      <h2 class="footer-heading">{{ t.footer_visit }}</h2>
+      <address>
+        <p class="icon-line">{% include icon.html name="pin" %}<span>{% for line in t.address_lines %}{{ line }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</span></p>
+        <p class="icon-line">{% include icon.html name="clock" %}<span>{{ t.hours_days }}: {{ t.hours_time }}<br>{{ t.closed_day }}: {{ t.closed }}</span></p>
+        <p class="icon-line">{% include icon.html name="phone" %}<a href="{{ tel_url }}">{{ clinic.phone_display }}</a></p>
+        <p class="icon-line">{% include icon.html name="mail" %}<a href="mailto:{{ clinic.email }}">{{ clinic.email }}</a></p>
+      </address>
+      <p><a class="footer-link-strong" href="{{ clinic.maps_url }}" rel="noopener" target="_blank">{{ t.directions }}</a></p>
+    </div>
+
+    <div>
+      <h2 class="footer-heading">{{ t.footer_treatments }}</h2>
+      <ul class="footer-links">
+        {%- for s in site.data.services %}
+        <li><a href="{{ lp }}/services/{{ s.slug }}/">{{ s[lang].name | default: s.en.name }}</a></li>
+        {%- endfor %}
+      </ul>
+    </div>
+
+    <div>
+      <h2 class="footer-heading">{{ t.footer_clinic }}</h2>
+      <ul class="footer-links">
+        <li><a href="{{ lp }}/dr-kiruthika/">{{ t.nav.doctor }}</a></li>
+        <li><a href="{{ lp }}/clinic/">{{ t.nav.clinic }}</a></li>
+        <li><a href="{{ lp }}/services/">{{ t.nav.services }}</a></li>
+        <li><a href="{{ lp }}/contact/">{{ t.nav.contact }}</a></li>
+        <li><a href="{{ clinic.instagram }}" rel="noopener" target="_blank">{% include icon.html name="instagram" %} @{{ clinic.instagram_handle }}</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© {{ site.time | date: "%Y" }} {{ clinic.name }}. {{ t.footer_rights }}</p>
+  </div>
+</footer>
+
+<div class="mobile-bar" role="navigation" aria-label="{{ t.book }}">
+  <a href="{{ tel_url }}">{% include icon.html name="phone" %}<span>{{ t.call_now }}</span></a>
+  <a href="{{ wa_url }}" rel="noopener" target="_blank">{% include icon.html name="whatsapp" %}<span>{{ t.whatsapp }}</span></a>
+</div>

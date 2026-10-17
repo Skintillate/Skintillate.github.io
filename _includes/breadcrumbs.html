@@ -1,0 +1,9 @@
+<nav class="breadcrumbs container" aria-label="{{ t.breadcrumb_label }}">
+  <ol>
+    <li><a href="{{ lp }}/">{{ t.nav.home }}</a></li>
+    {%- if page.parent == "services" %}
+    <li><a href="{{ lp }}/services/">{{ t.nav.services }}</a></li>
+    {%- endif %}
+    <li aria-current="page">{{ page.nav_title | default: page.heading }}</li>
+  </ol>
+</nav>

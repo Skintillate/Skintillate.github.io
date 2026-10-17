@@ -1,0 +1,58 @@
+---
+ref: doctor
+permalink: /dr-kiruthika/
+title: Dr. Kiruthika S. – Dermatologist in Salem | Skintillate
+description: Dr. Kiruthika S., MBBS, MD (DVL) PGIMER Chandigarh, DNB, is a consultant dermatologist in Salem with 10+ years of experience in skin, hair, nail and aesthetic care.
+heading: Dr. Kiruthika S., Consultant Dermatologist in Salem
+nav_title: Dr. Kiruthika
+schema_type: ProfilePage
+about_doctor: true
+---
+{% include vars.html %}
+<section class="page-hero container split">
+  <div class="split-media">
+    <div class="arch">
+      <img src="/assets/img/dr-kiruthika-dermatologist-salem-506.webp" width="506" height="625" fetchpriority="high"
+           alt="Dr. Kiruthika S., consultant dermatologist at Skintillate Skin Clinic, Salem">
+    </div>
+  </div>
+  <div>
+    <p class="eyebrow">{% include icon.html name="leaf" %}<span>Meet the doctor</span></p>
+    <h1>{{ page.heading }}</h1>
+    <p class="lead">A dermatologist with over 10 years of experience, combining academic excellence, clinical expertise, research and a passion for aesthetic medicine.</p>
+    <p>{{ clinic.doctor.qualifications }} · {{ clinic.doctor.registration }}</p>
+    {% include contact-buttons.html %}
+  </div>
+</section>
+
+<section class="section section-alt" aria-labelledby="training-title">
+  <div class="container split">
+    <div>
+      <h2 id="training-title">Training &amp; qualifications</h2>
+      <ul class="credentials">
+        <li><strong>MBBS</strong><span>Madras Medical College, Chennai</span></li>
+        <li><strong>MD – Dermatology, Venereology &amp; Leprology</strong><span>Postgraduate Institute of Medical Education and Research (PGIMER), Chandigarh</span></li>
+        <li><strong>DNB – Dermatology, Venereology &amp; Leprology</strong><span>National Board of Examinations, New Delhi</span></li>
+        <li><strong>Senior Resident</strong><span>JIPMER, Puducherry and PGIMER, Chandigarh</span></li>
+        <li><strong>Registration</strong><span>Tamil Nadu Medical Council, Reg. No. {{ clinic.doctor.registration_number }}</span></li>
+      </ul>
+    </div>
+    <div class="prose">
+      <h2>About Dr. Kiruthika</h2>
+      <p>Dr. Kiruthika completed her MBBS at Madras Medical College, Chennai, followed by an MD in Dermatology, Venereology and Leprology from the prestigious PGIMER, Chandigarh, and a DNB in Dermatology, Venereology and Leprology from the National Board of Examinations, New Delhi.</p>
+      <p>She has served as a Senior Resident at both JIPMER, Puducherry and PGIMER, Chandigarh, gaining extensive experience in managing a wide range of skin, hair and nail conditions.</p>
+      <p>Her academic and research interests include dermatologic surgery and advanced aesthetic procedures, and her research has received medals at national conferences. She has been invited as faculty at national and international conferences and has authored research publications and textbook chapters.</p>
+      <p>With a commitment to evidence-based, personalised care, Dr. Kiruthika brings together precision in treatment, artistry in aesthetics and compassion in patient care, helping every person achieve healthier skin and renewed confidence.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="focus-title">
+  <div class="container">
+    <div class="section-head">
+      <h2 id="focus-title">Areas of care</h2>
+      <p>Dr. Kiruthika personally sees every patient, from diagnosis to treatment and follow-up.</p>
+    </div>
+    {% include service-cards.html %}
+  </div>
+</section>

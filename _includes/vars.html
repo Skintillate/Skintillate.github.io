@@ -1,0 +1,16 @@
+{%- comment -%}
+  Sets the per-page variables every layout and include relies on:
+  lang, t (interface text), clinic, lp (URL prefix for this language: "" or "/ta"),
+  translations (this page in every language that exists, via the shared `ref`).
+{%- endcomment -%}
+{%- assign lang = page.lang | default: site.lang -%}
+{%- assign t = site.data.i18n[lang] | default: site.data.i18n[site.lang] -%}
+{%- assign clinic = site.data.clinic -%}
+{%- if lang == site.lang -%}{%- assign lp = "" -%}{%- else -%}{%- assign lp = "/" | append: lang -%}{%- endif -%}
+{%- if page.ref -%}
+  {%- assign translations = site.pages | where: "ref", page.ref | sort: "lang" -%}
+{%- else -%}
+  {%- assign translations = "" | split: "" -%}
+{%- endif -%}
+{%- capture wa_url -%}https://wa.me/{{ clinic.whatsapp }}?text={{ clinic.whatsapp_message | uri_escape }}{%- endcapture -%}
+{%- capture tel_url -%}tel:{{ clinic.phone_e164 }}{%- endcapture -%}

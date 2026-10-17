@@ -1,0 +1,62 @@
+---
+ref: contact
+permalink: /contact/
+title: Contact & Directions | Skintillate Skin Clinic, Salem
+description: Book an appointment at Skintillate Skin Clinic, Nagaramalai Main Road, North Alagapuram, Salem. Call or WhatsApp +91 77088 74297. Open Mon–Sat, 11 AM–7 PM.
+heading: Contact &amp; Directions
+nav_title: Contact
+hide_cta: true
+---
+{% include vars.html %}
+<section class="page-hero container">
+  <p class="eyebrow">{% include icon.html name="leaf" %}<span>{{ t.book }}</span></p>
+  <h1>Contact &amp; Directions</h1>
+  <p class="lead">To book an appointment, call or WhatsApp us on <a href="{{ tel_url }}">{{ clinic.phone_display }}</a>. We are open Monday to Saturday, 11 AM to 7 PM.</p>
+  {% include contact-buttons.html %}
+</section>
+
+<section class="section section-alt" aria-labelledby="find-title">
+  <div class="container">
+    <h2 id="find-title" class="visually-hidden">Address, hours and map</h2>
+    <div class="contact-layout">
+      <div class="info-grid">
+        <div class="info-card">
+          <h3>{{ t.address_title }}</h3>
+          <address class="icon-line">{% include icon.html name="pin" %}<span><strong>{{ clinic.name }}</strong><br>{% for line in t.address_lines %}{{ line }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</span></address>
+          <p><a class="btn btn-outline btn-sm" href="{{ clinic.maps_url }}" rel="noopener" target="_blank">{% include icon.html name="pin" %}<span>{{ t.directions }}</span></a></p>
+        </div>
+        <div class="info-card">
+          <h3>{{ t.hours_title }}</h3>
+          {% include hours-table.html %}
+        </div>
+        <div class="info-card">
+          <h3>Phone, WhatsApp &amp; email</h3>
+          <p class="icon-line">{% include icon.html name="phone" %}<a href="{{ tel_url }}">{{ clinic.phone_display }}</a></p>
+          <p class="icon-line">{% include icon.html name="whatsapp" %}<a href="{{ wa_url }}" rel="noopener" target="_blank">WhatsApp {{ clinic.phone_display }}</a></p>
+          <p class="icon-line">{% include icon.html name="mail" %}<a href="mailto:{{ clinic.email }}">{{ clinic.email }}</a></p>
+          <p class="icon-line">{% include icon.html name="instagram" %}<a href="{{ clinic.instagram }}" rel="noopener" target="_blank">@{{ clinic.instagram_handle }}</a></p>
+        </div>
+      </div>
+      <iframe class="map-frame" src="{{ clinic.maps_embed }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              title="Map showing Skintillate Skin Clinic, North Alagapuram, Salem"></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="landmark-title">
+  <div class="container signboard">
+    <img src="/assets/img/skintillate-clinic-signboard-480.webp" width="480" height="636" loading="lazy"
+         alt="Illuminated Skintillate Skin Clinic signboard showing Dr. Kiruthika S. and the appointment number">
+    <div class="prose">
+      <h2 id="landmark-title">How to find us</h2>
+      <p>The clinic is on <strong>Nagaramalai Main Road in North Alagapuram</strong>, directly <strong>opposite Dhurpathi Amman Kovil</strong>, in Srinivasa Complex (door no. 54).</p>
+      <p>Look for the Skintillate signboard shown here. If you need help finding us, call or WhatsApp <a href="{{ tel_url }}">{{ clinic.phone_display }}</a>.</p>
+      <h3>How appointments work</h3>
+      <ol>
+        <li>Call or WhatsApp us to choose a convenient time.</li>
+        <li>Meet Dr. Kiruthika for a consultation and examination.</li>
+        <li>Get a personalised treatment plan, with procedures and medicines available at the clinic.</li>
+      </ol>
+    </div>
+  </div>
+</section>

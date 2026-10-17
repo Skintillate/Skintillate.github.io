@@ -1,0 +1,28 @@
+{%- comment -%}
+  Service cards. Pass `refs` (comma-separated service refs) to show a subset in that order,
+  or `group` to show one group; with neither, every service is shown.
+  `heading` sets the card title level (default h3).
+{%- endcomment -%}
+{%- assign h = include.heading | default: "h3" -%}
+{%- if include.refs -%}
+  {%- assign wanted = include.refs | split: "," -%}
+  {%- assign cards = "" | split: "" -%}
+  {%- for r in wanted -%}
+    {%- assign found = site.data.services | where: "ref", r | first -%}
+    {%- if found -%}{%- assign cards = cards | push: found -%}{%- endif -%}
+  {%- endfor -%}
+{%- elsif include.group -%}
+  {%- assign cards = site.data.services | where: "group", include.group -%}
+{%- else -%}
+  {%- assign cards = site.data.services -%}
+{%- endif -%}
+<ul class="card-grid" role="list">
+  {%- for s in cards %}
+  {%- assign txt = s[lang] | default: s.en %}
+  <li class="card">
+    <{{ h }} class="card-title"><a href="{{ lp }}/services/{{ s.slug }}/">{{ txt.name }}</a></{{ h }}>
+    <p>{{ txt.blurb }}</p>
+    <span class="card-more" aria-hidden="true">{{ t.learn_more }} {% include icon.html name="arrow" %}</span>
+  </li>
+  {%- endfor %}
+</ul>

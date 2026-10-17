@@ -1,0 +1,10 @@
+<section class="cta-band" aria-labelledby="cta-title">
+  <div class="container cta-inner">
+    <div>
+      <h2 id="cta-title">{{ include.title | default: t.book }}</h2>
+      <p>{{ include.lead | default: t.book_lead }}</p>
+      <p class="cta-hours">{% include icon.html name="clock" %}<span>{{ t.hours_days }}, {{ t.hours_time }} · {{ t.closed_day }} {{ t.closed | downcase }}</span></p>
+    </div>
+    {% include contact-buttons.html class="cta-buttons" %}
+  </div>
+</section>

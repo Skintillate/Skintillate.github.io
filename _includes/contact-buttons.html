@@ -1,0 +1,4 @@
+<div class="button-row{% if include.class %} {{ include.class }}{% endif %}">
+  <a class="btn" href="{{ tel_url }}">{% include icon.html name="phone" %}<span>{{ t.call }} {{ clinic.phone_display }}</span></a>
+  <a class="btn btn-outline" href="{{ wa_url }}" rel="noopener" target="_blank">{% include icon.html name="whatsapp" %}<span>{{ t.whatsapp }}</span></a>
+</div>

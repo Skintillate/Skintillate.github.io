@@ -1,0 +1,44 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title | default: site.title | escape }}</title>
+<meta name="description" content="{{ page.description | strip | escape }}">
+{%- if page.noindex %}
+<meta name="robots" content="noindex, follow">
+{%- else %}
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+{%- endif %}
+{%- if translations.size > 1 %}
+{%- for p in translations %}
+<link rel="alternate" hreflang="{{ site.data.i18n[p.lang].hreflang }}" href="{{ p.url | absolute_url }}">
+{%- endfor %}
+{%- assign default_page = translations | where: "lang", site.lang | first %}
+<link rel="alternate" hreflang="x-default" href="{{ default_page.url | absolute_url }}">
+{%- endif %}
+
+{%- assign og_image = page.og_image | default: "/assets/img/og-image.jpg" %}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ clinic.name | escape }}">
+<meta property="og:title" content="{{ page.og_title | default: page.title | escape }}">
+<meta property="og:description" content="{{ page.description | strip | escape }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:image" content="{{ og_image | absolute_url }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Dr. Kiruthika S., dermatologist at Skintillate Skin Clinic, Salem">
+<meta property="og:locale" content="{{ t.og_locale }}">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#FDF5F3">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@400;500&display=swap">
+{%- if page.preload_image %}
+<link rel="preload" as="image" href="{{ page.preload_image }}" fetchpriority="high">
+{%- endif %}
+<link rel="stylesheet" href="/assets/css/main.css?v={{ site.time | date: '%s' }}">
+{% include schema.html %}

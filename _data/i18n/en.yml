@@ -1,0 +1,59 @@
+# Interface text for English pages. A Tamil version goes in ta.yml with the same keys.
+hreflang: en-IN
+og_locale: en_IN
+language_name: English
+
+skip_to_content: Skip to content
+menu: Menu
+nav:
+  home: Home
+  services: Treatments
+  doctor: Dr. Kiruthika
+  clinic: Our Clinic
+  contact: Contact
+breadcrumb_label: Breadcrumb
+
+brand_prefix: Dr. Kiruthika's
+
+call: Call
+call_now: Call now
+whatsapp: WhatsApp
+book: Book an appointment
+book_lead: Call or WhatsApp us to book a consultation with Dr. Kiruthika.
+directions: Get directions
+email: Email
+instagram: Instagram
+
+hours_title: Opening hours
+hours_days: Monday – Saturday
+hours_time: 11:00 AM – 7:00 PM
+closed_day: Sunday
+closed: Closed
+address_title: Address
+address_lines:
+  - "No: 54, Srinivasa Complex,"
+  - Nagaramalai Main Road,
+  - Dhurpathi Amman Kovil Opposite,
+  - North Alagapuram, Salem – 636 016
+landmark: Opposite Dhurpathi Amman Kovil on Nagaramalai Main Road
+
+learn_more: Learn more
+view_all_services: View all treatments
+related_title: Related treatments
+faq_title: Frequently asked questions
+your_doctor: Your doctor
+reviewed_by: Medically reviewed by
+last_updated: Last updated
+disclaimer: This page is for general information and is not a substitute for a consultation. Whether a treatment suits you, how many sessions you need and the results you can expect differ from person to person, and are discussed during your visit.
+
+groups:
+  dermatology: Skin conditions
+  hair-nail: Hair & nail
+  procedures: Minor skin procedures
+  aesthetics: Laser & aesthetics
+
+footer_tagline: Dermatology and aesthetic care for skin, hair and nails in Salem.
+footer_visit: Visit us
+footer_treatments: Treatments
+footer_clinic: Clinic
+footer_rights: All rights reserved.

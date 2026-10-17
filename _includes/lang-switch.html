@@ -1,0 +1,12 @@
+{%- comment -%}
+  Shown only when this page exists in another language, so it never links to a missing page.
+{%- endcomment -%}
+{%- if translations.size > 1 %}
+<ul class="lang-switch">
+  {%- for p in translations %}
+  {%- unless p.lang == lang %}
+  <li><a href="{{ p.url }}" hreflang="{{ site.data.i18n[p.lang].hreflang }}" lang="{{ p.lang }}">{{ site.data.i18n[p.lang].language_name }}</a></li>
+  {%- endunless %}
+  {%- endfor %}
+</ul>
+{%- endif %}

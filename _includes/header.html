@@ -1,0 +1,29 @@
+{%- assign nav_items = "services:/services/,doctor:/dr-kiruthika/,clinic:/clinic/,contact:/contact/" | split: "," -%}
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="{{ lp }}/" aria-label="{{ clinic.name | escape }} – {{ t.nav.home }}">
+      <img class="brand-mark" src="/assets/img/skintillate-mark.webp" width="69" height="112" alt="">
+      <span class="brand-text">
+        <span class="brand-prefix">{{ t.brand_prefix }}</span>
+        <span class="brand-name"><span class="brand-skin">Skin</span>tillate</span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      {% include icon.html name="menu" %}<span class="visually-hidden">{{ t.menu }}</span>
+    </button>
+
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul>
+        {%- for item in nav_items %}
+        {%- assign parts = item | split: ":" %}
+        {%- assign key = parts[0] %}
+        {%- assign href = lp | append: parts[1] %}
+        <li><a href="{{ href }}"{% if page.url == href or page.parent == key %} aria-current="page"{% endif %}>{{ t.nav[key] }}</a></li>
+        {%- endfor %}
+      </ul>
+      {% include lang-switch.html %}
+      <a class="btn btn-sm" href="{{ tel_url }}">{% include icon.html name="phone" %}<span>{{ clinic.phone_display }}</span></a>
+    </nav>
+  </div>
+</header>

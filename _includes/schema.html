@@ -1,0 +1,156 @@
+{%- comment -%}
+  JSON-LD for every page: the clinic, Dr. Kiruthika, the website, this web page,
+  plus breadcrumbs (inner pages) and FAQPage (pages with `faq` in front matter).
+  Clinic facts come from _data/clinic.yml so they always match the visible text.
+{%- endcomment -%}
+{%- assign home = site.url | append: "/" -%}
+{%- assign clinic_id = home | append: "#clinic" -%}
+{%- assign doctor_url = "/dr-kiruthika/" | absolute_url -%}
+{%- assign doctor_id = doctor_url | append: "#person" -%}
+{%- assign page_url = page.url | absolute_url -%}
+{%- assign services_url = lp | append: "/services/" | absolute_url -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalClinic",
+      "@id": {{ clinic_id | jsonify }},
+      "name": {{ clinic.name | jsonify }},
+      "alternateName": {{ clinic.short_name | jsonify }},
+      "url": {{ home | jsonify }},
+      "logo": {{ "/assets/img/skintillate-logo-480.webp" | absolute_url | jsonify }},
+      "image": [
+        {{ "/assets/img/og-image.jpg" | absolute_url | jsonify }},
+        {{ "/assets/img/skintillate-skin-clinic-salem-reception-1085.webp" | absolute_url | jsonify }}
+      ],
+      "description": "Dermatology and aesthetic skin, hair and nail clinic in North Alagapuram, Salem, led by dermatologist Dr. Kiruthika S.",
+      "telephone": {{ clinic.phone_e164 | jsonify }},
+      "email": {{ clinic.email | jsonify }},
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": {{ clinic.address.street | append: ", " | append: clinic.address.locality | jsonify }},
+        "addressLocality": {{ clinic.address.city | jsonify }},
+        "addressRegion": {{ clinic.address.region | jsonify }},
+        "postalCode": {{ clinic.address.postal_code | jsonify }},
+        "addressCountry": {{ clinic.address.country | jsonify }}
+      },
+      "geo": { "@type": "GeoCoordinates", "latitude": {{ clinic.geo.lat }}, "longitude": {{ clinic.geo.lng }} },
+      "hasMap": {{ clinic.maps_url | jsonify }},
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": {{ clinic.hours.days | jsonify }},
+        "opens": {{ clinic.hours.opens | jsonify }},
+        "closes": {{ clinic.hours.closes | jsonify }}
+      }],
+      "medicalSpecialty": "Dermatology",
+      "isAcceptingNewPatients": true,
+      "areaServed": { "@type": "City", "name": "Salem" },
+      "sameAs": [{{ clinic.instagram | jsonify }}, {{ clinic.maps_url | jsonify }}],
+      "employee": { "@id": {{ doctor_id | jsonify }} },
+      "availableService": [
+        {%- for s in site.data.services %}
+        {%- if s.group == "dermatology" or s.group == "hair-nail" %}{% assign stype = "MedicalTherapy" %}{% else %}{% assign stype = "MedicalProcedure" %}{% endif %}
+        {
+          "@type": {{ stype | jsonify }},
+          "name": {{ s[lang].name | default: s.en.name | jsonify }},
+          "url": {{ lp | append: "/services/" | append: s.slug | append: "/" | absolute_url | jsonify }}
+        }{% unless forloop.last %},{% endunless %}
+        {%- endfor %}
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": {{ doctor_id | jsonify }},
+      "name": {{ clinic.doctor.name | jsonify }},
+      "honorificPrefix": "Dr.",
+      "jobTitle": "Consultant Dermatologist",
+      "url": {{ doctor_url | jsonify }},
+      "image": {{ "/assets/img/dr-kiruthika-dermatologist-salem-506.webp" | absolute_url | jsonify }},
+      "worksFor": { "@id": {{ clinic_id | jsonify }} },
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "Madras Medical College, Chennai" },
+        { "@type": "CollegeOrUniversity", "name": "Postgraduate Institute of Medical Education and Research (PGIMER), Chandigarh" }
+      ],
+      "hasCredential": [
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "name": "MBBS" },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "name": "MD in Dermatology, Venereology and Leprology (DVL)" },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "name": "DNB in Dermatology, Venereology and Leprology (DVL)" },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Medical registration",
+          "name": {{ "Tamil Nadu Medical Council Registration No. " | append: clinic.doctor.registration_number | jsonify }},
+          "recognizedBy": { "@type": "Organization", "name": "Tamil Nadu Medical Council" }
+        }
+      ],
+      "knowsAbout": ["Dermatology", "Dermatologic surgery", "Aesthetic dermatology", "Lasers in dermatology", "Hair and nail disorders"],
+      "sameAs": [{{ clinic.instagram | jsonify }}]
+    },
+    {
+      "@type": "WebSite",
+      "@id": {{ home | append: "#website" | jsonify }},
+      "url": {{ home | jsonify }},
+      "name": {{ clinic.name | jsonify }},
+      "inLanguage": {{ t.hreflang | jsonify }},
+      "publisher": { "@id": {{ clinic_id | jsonify }} }
+    },
+    {
+      "@type": {{ page.schema_type | default: "WebPage" | jsonify }},
+      "@id": {{ page_url | append: "#webpage" | jsonify }},
+      "url": {{ page_url | jsonify }},
+      "name": {{ page.title | jsonify }},
+      "description": {{ page.description | strip | jsonify }},
+      "inLanguage": {{ t.hreflang | jsonify }},
+      "isPartOf": { "@id": {{ home | append: "#website" | jsonify }} },
+      "about": {% if page.conditions %}[
+        {%- for c in page.conditions %}
+        { "@type": "MedicalCondition", "name": {{ c | jsonify }} }{% unless forloop.last %},{% endunless %}
+        {%- endfor %}
+      ]{% elsif page.about_doctor %}{ "@id": {{ doctor_id | jsonify }} }{% else %}{ "@id": {{ clinic_id | jsonify }} }{% endif %}
+      {%- if page.about_doctor %},
+      "mainEntity": { "@id": {{ doctor_id | jsonify }} }
+      {%- endif %}
+      {%- if page.schema_type == "MedicalWebPage" %},
+      "specialty": "Dermatology"
+      {%- endif %}
+      {%- if page.last_reviewed %},
+      "lastReviewed": {{ page.last_reviewed | date: "%Y-%m-%d" | jsonify }},
+      "reviewedBy": { "@id": {{ doctor_id | jsonify }} }
+      {%- endif %}
+      {%- if page.url != "/" and page.url != "/404.html" %},
+      "breadcrumb": { "@id": {{ page_url | append: "#breadcrumb" | jsonify }} }
+      {%- endif %}
+    }
+    {%- if page.url != "/" and page.url != "/404.html" %},
+    {
+      "@type": "BreadcrumbList",
+      "@id": {{ page_url | append: "#breadcrumb" | jsonify }},
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": {{ t.nav.home | jsonify }}, "item": {{ lp | append: "/" | absolute_url | jsonify }} },
+        {%- if page.parent == "services" %}
+        { "@type": "ListItem", "position": 2, "name": {{ t.nav.services | jsonify }}, "item": {{ services_url | jsonify }} },
+        { "@type": "ListItem", "position": 3, "name": {{ page.nav_title | default: page.heading | jsonify }}, "item": {{ page_url | jsonify }} }
+        {%- else %}
+        { "@type": "ListItem", "position": 2, "name": {{ page.nav_title | default: page.heading | jsonify }}, "item": {{ page_url | jsonify }} }
+        {%- endif %}
+      ]
+    }
+    {%- endif %}
+    {%- if page.faq %},
+    {
+      "@type": "FAQPage",
+      "@id": {{ page_url | append: "#faq" | jsonify }},
+      "mainEntity": [
+        {%- for item in page.faq %}
+        {
+          "@type": "Question",
+          "name": {{ item.q | jsonify }},
+          "acceptedAnswer": { "@type": "Answer", "text": {{ item.a | strip | jsonify }} }
+        }{% unless forloop.last %},{% endunless %}
+        {%- endfor %}
+      ]
+    }
+    {%- endif %}
+  ]
+}
+</script>

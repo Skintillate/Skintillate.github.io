@@ -1,0 +1,28 @@
+---
+layout: page
+ref: services
+parent: ""
+schema_type: CollectionPage
+title: Skin, Hair & Laser Treatments in Salem | Skintillate
+description: Treatments at Skintillate Skin Clinic, Salem, for acne, pigmentation, hair loss (PRP, GFC), nail disorders, wart and mole removal, laser, peels, Botox and fillers.
+heading: Skin, Hair, Nail &amp; Aesthetic Treatments in Salem
+nav_title: Treatments
+---
+{% include vars.html %}
+{%- assign groups = "dermatology,hair-nail,procedures,aesthetics" | split: "," -%}
+<section class="page-hero container">
+  <p class="eyebrow">{% include icon.html name="leaf" %}<span>Treatments</span></p>
+  <h1>{{ page.heading }}</h1>
+  <p class="lead">Every treatment begins with a consultation with Dr. Kiruthika, who examines your skin, finds the cause of the problem and plans treatment around your needs.</p>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    {%- for g in groups %}
+    <div class="service-group">
+      <h2>{% include icon.html name="leaf" %}{{ t.groups[g] }}</h2>
+      {% include service-cards.html group=g heading="h3" %}
+    </div>
+    {%- endfor %}
+  </div>
+</section>

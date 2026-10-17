@@ -1,0 +1,67 @@
+---
+layout: default
+---
+{% include vars.html -%}
+{%- assign svc = site.data.services | where: "ref", page.ref | first -%}
+{% include breadcrumbs.html %}
+<article class="service">
+  <header class="page-hero container">
+    <p class="eyebrow">{% include icon.html name="leaf" %}<span>{{ t.groups[svc.group] }}</span></p>
+    <h1>{{ page.heading }}</h1>
+    <p class="lead">{{ page.intro }}</p>
+    {% include contact-buttons.html %}
+  </header>
+
+  <div class="container service-layout">
+    <div class="prose">
+      {{ content }}
+
+      {%- if page.faq %}
+      <section class="faq" aria-labelledby="faq-title">
+        <h2 id="faq-title">{{ t.faq_title }}</h2>
+        {%- for item in page.faq %}
+        <details>
+          <summary>{{ item.q }}</summary>
+          <div class="faq-answer">{{ item.a | markdownify }}</div>
+        </details>
+        {%- endfor %}
+      </section>
+      {%- endif %}
+
+      <footer class="service-meta">
+        {%- if page.last_reviewed %}
+        <p>{{ t.reviewed_by }} <a href="{{ lp }}/dr-kiruthika/">{{ clinic.doctor.name }}, {{ clinic.doctor.qualifications }}</a> · {{ t.last_updated }} <time datetime="{{ page.last_reviewed | date: '%Y-%m-%d' }}">{{ page.last_reviewed | date: "%-d %B %Y" }}</time></p>
+        {%- endif %}
+        <p class="disclaimer">{{ t.disclaimer }}</p>
+      </footer>
+    </div>
+
+    <aside class="service-aside">
+      <div class="aside-card">
+        <h2 class="aside-title">{{ t.book }}</h2>
+        <p class="icon-line">{% include icon.html name="clock" %}<span>{{ t.hours_days }}<br>{{ t.hours_time }}</span></p>
+        <p class="icon-line">{% include icon.html name="pin" %}<span>{{ clinic.address.locality }}, {{ clinic.address.city }}</span></p>
+        {% include contact-buttons.html class="stack" %}
+      </div>
+      <a class="aside-card doctor-mini" href="{{ lp }}/dr-kiruthika/">
+        <img src="/assets/img/dr-kiruthika-dermatologist-salem-320.webp" width="320" height="395" alt="Dr. Kiruthika S., dermatologist" loading="lazy">
+        <span>
+          <span class="doctor-mini-label">{{ t.your_doctor }}</span>
+          <strong>{{ clinic.doctor.name }}</strong>
+          <span>{{ clinic.doctor.qualifications }}</span>
+        </span>
+      </a>
+    </aside>
+  </div>
+</article>
+
+{%- if page.related %}
+<section class="section section-alt" aria-labelledby="related-title">
+  <div class="container">
+    <h2 id="related-title">{{ t.related_title }}</h2>
+    {% include service-cards.html refs=page.related heading="h3" %}
+  </div>
+</section>
+{%- endif %}
+
+{% include cta.html %}

@@ -1,0 +1,19 @@
+---
+layout: default
+permalink: /404.html
+title: Page not found | Skintillate Skin Clinic
+description: The page you were looking for could not be found.
+noindex: true
+sitemap: false
+---
+{% include vars.html %}
+<section class="container not-found">
+  <p class="eyebrow">{% include icon.html name="leaf" %}<span>404</span></p>
+  <h1>Sorry, we couldn't find that page</h1>
+  <p class="lead" style="margin: 0 auto;">The link may be old or mistyped. Try one of these instead, or call us on <a href="{{ tel_url }}">{{ clinic.phone_display }}</a>.</p>
+  <div class="button-row">
+    <a class="btn" href="/">Home</a>
+    <a class="btn btn-outline" href="/services/">Treatments</a>
+    <a class="btn btn-outline" href="/contact/">Contact</a>
+  </div>
+</section>
