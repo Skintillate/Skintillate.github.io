@@ -253,6 +253,16 @@ h3 { font-size: 1.45rem; }
 .map-link a { display: inline-flex; align-items: center; gap: .5em; font-weight: 500; }
 @media (max-width: 640px) { .map-frame { height: 320px; } }
 .contact-layout { display: grid; gap: 24px; }
+/* Hero with text on the left and the map on the right (stacks on tablets and phones). */
+.page-hero-split { display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(32px, 5vw, 64px); align-items: center; }
+.page-hero-split .map-wrap { margin-top: 0; }
+.page-hero-split .map-frame { height: 420px; }
+@media (max-width: 860px) {
+  .page-hero-split { grid-template-columns: 1fr; gap: 28px; }
+  .page-hero-split .map-frame { height: 300px; }
+}
+@media (max-width: 480px) { .page-hero-split .map-frame { height: 260px; } }
+
 .info-card a { overflow-wrap: anywhere; }
 .hours td { white-space: nowrap; padding-left: 12px; }
 .signboard { display: grid; grid-template-columns: 220px 1fr; gap: 24px; align-items: center; }

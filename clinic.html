@@ -7,10 +7,15 @@ heading: Our Skin Clinic in North Alagapuram, Salem
 nav_title: Our Clinic
 ---
 {% include vars.html %}
-<section class="page-hero container">
-  <p class="eyebrow">{% include icon.html name="leaf" %}<span>The clinic</span></p>
-  <h1>{{ page.heading }}</h1>
-  <p class="lead">Exceptional care. A comfortable experience. Step into a space where expert dermatology, modern treatments and a calm, beautiful setting come together.</p>
+<section class="page-hero page-hero-split container">
+  <div>
+    <p class="eyebrow">{% include icon.html name="leaf" %}<span>The clinic</span></p>
+    <h1>{{ page.heading }}</h1>
+    <p class="lead">Exceptional care. A comfortable experience. Step into a space where expert dermatology, modern treatments and a calm, beautiful setting come together.</p>
+    <p class="icon-line">{% include icon.html name="pin" %}<span>{{ t.address_lines | join: " " }}</span></p>
+    {% include contact-buttons.html %}
+  </div>
+  {% include map.html %}
 </section>
 
 <section class="section section-alt" aria-labelledby="experience-title">
