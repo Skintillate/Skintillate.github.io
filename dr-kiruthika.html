@@ -20,7 +20,7 @@ about_doctor: true
     <p class="eyebrow">{% include icon.html name="leaf" %}<span>Meet the doctor</span></p>
     <h1>{{ page.heading }}</h1>
     <p class="lead">A dermatologist with over 10 years of experience, combining academic excellence, clinical expertise, research and a passion for aesthetic medicine.</p>
-    <p>{{ clinic.doctor.qualifications }} · {{ clinic.doctor.registration }}</p>
+    <p class="doctor-creds icon-line">{% include icon.html name="graduation" %}<span>{{ clinic.doctor.qualifications }} · {{ clinic.doctor.registration }}</span></p>
     {% include contact-buttons.html %}
   </div>
 </section>
