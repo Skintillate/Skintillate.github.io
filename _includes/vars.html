@@ -14,3 +14,5 @@
 {%- endif -%}
 {%- capture wa_url -%}https://wa.me/{{ clinic.whatsapp }}?text={{ clinic.whatsapp_message | uri_escape }}{%- endcapture -%}
 {%- capture tel_url -%}tel:{{ clinic.phone_e164 }}{%- endcapture -%}
+{%- comment -%} Credentials for display: "Ex-Senior" must not break across lines. Structured data uses the plain text. {%- endcomment -%}
+{%- assign quals_html = clinic.doctor.qualifications | replace: "Ex-Senior", '<span class="nowrap">Ex-Senior</span>' -%}

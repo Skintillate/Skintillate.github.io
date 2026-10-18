@@ -30,7 +30,7 @@ layout: default
 
       <footer class="service-meta">
         {%- if page.last_reviewed %}
-        <p>{{ t.reviewed_by }} <a href="{{ lp }}/dr-kiruthika/">{{ clinic.doctor.name }}, {{ clinic.doctor.qualifications }}</a> · {{ t.last_updated }} <time datetime="{{ page.last_reviewed | date: '%Y-%m-%d' }}">{{ page.last_reviewed | date: "%-d %B %Y" }}</time></p>
+        <p>{{ t.reviewed_by }} <a href="{{ lp }}/dr-kiruthika/">{{ clinic.doctor.name }}, {{ quals_html }}</a> · {{ t.last_updated }} <time datetime="{{ page.last_reviewed | date: '%Y-%m-%d' }}">{{ page.last_reviewed | date: "%-d %B %Y" }}</time></p>
         {%- endif %}
         <p class="disclaimer">{{ t.disclaimer }}</p>
       </footer>
@@ -48,7 +48,7 @@ layout: default
         <span>
           <span class="doctor-mini-label">{{ t.your_doctor }}</span>
           <strong>{{ clinic.doctor.name }}</strong>
-          <span>{{ clinic.doctor.qualifications }}</span>
+          <span>{{ quals_html }}</span>
         </span>
       </a>
     </aside>

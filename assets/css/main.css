@@ -61,6 +61,7 @@ h3 { font-size: 1.45rem; }
 
 .container { width: 100%; max-width: 1160px; margin: 0 auto; padding: 0 20px; }
 .narrow { max-width: 760px; }
+.nowrap { white-space: nowrap; }
 .visually-hidden {
   position: absolute !important; width: 1px; height: 1px; overflow: hidden;
   clip: rect(0 0 0 0); white-space: nowrap;
@@ -224,6 +225,7 @@ h3 { font-size: 1.45rem; }
 .check-list .icon { color: var(--sage); margin-top: .3em; }
 
 .doctor-creds { font-weight: 500; color: var(--rose); }
+.doctor-creds .icon { width: 1.4em; height: 1.4em; margin-top: .18em; }
 .credentials { display: grid; gap: 12px; list-style: none; padding: 0; margin: 1.5rem 0; }
 .credentials li { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 14px 18px; }
 .credentials strong { display: block; color: var(--ink); }
