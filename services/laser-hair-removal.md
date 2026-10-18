@@ -7,7 +7,7 @@ nav_title: Laser Hair Removal
 intro: Laser hair removal gives long-term reduction of unwanted hair, with smoother skin and fewer ingrown hairs than repeated shaving, waxing or threading.
 conditions: [Hirsutism, Hypertrichosis, Pseudofolliculitis barbae]
 related: laser,anti-ageing,chemical-peels
-last_reviewed:  # set to the date (YYYY-MM-DD) once Dr. Kiruthika approves this page
+last_reviewed: 2026-10-18
 faq:
   - q: Is laser hair removal permanent?
     a: Laser hair removal gives long-term hair reduction rather than guaranteed permanent removal. Most people see a marked reduction after a full course, and any hair that grows back is usually finer and lighter. Occasional maintenance sessions help keep results.

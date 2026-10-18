@@ -7,7 +7,7 @@ nav_title: Pigmentation & Melasma
 intro: Dark patches and uneven skin tone are among the most common reasons people visit a dermatologist. The right treatment depends on what is causing the pigmentation, so an accurate diagnosis comes first.
 conditions: [Melasma, Hyperpigmentation, Post-inflammatory hyperpigmentation, Solar lentigines, Periorbital hyperpigmentation, Acanthosis nigricans]
 related: chemical-peels,acne,clinical-dermatology
-last_reviewed:  # set to the date (YYYY-MM-DD) once Dr. Kiruthika approves this page
+last_reviewed: 2026-10-18
 faq:
   - q: Can melasma be cured permanently?
     a: Melasma can be lightened significantly, but it is a long-term condition that can return with sun exposure, heat or hormonal changes. Daily sun protection and a maintenance routine help keep it under control after treatment.

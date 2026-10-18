@@ -7,7 +7,7 @@ nav_title: Nail Disorders
 intro: Your nails can show signs of infection, skin disease and even your general health. Dermatologists are trained to diagnose and treat nail problems, from fungal infections to painful ingrown toenails.
 conditions: [Onychomycosis, Ingrown toenail, Paronychia, Nail psoriasis, Brittle nails]
 related: clinical-dermatology,electrosurgery,hair-loss
-last_reviewed:  # set to the date (YYYY-MM-DD) once Dr. Kiruthika approves this page
+last_reviewed: 2026-10-18
 faq:
   - q: Why does nail fungus take so long to treat?
     a: Medicines can only clear the infection as fast as a healthy nail grows out. Fingernails take about 6 months to grow out fully and toenails 12 to 18 months, so it is important to finish the full course even when the nail starts to look better.

@@ -7,7 +7,7 @@ nav_title: Anti-Ageing, Botox & Fillers
 intro: Good anti-ageing care looks natural. You still look like yourself, just fresher and more rested. Every aesthetic treatment here is planned and performed by a dermatologist with a special interest in aesthetic procedures.
 conditions: [Wrinkles, Photoaging, Facial volume loss, Hyperhidrosis]
 related: laser,chemical-peels,pigmentation
-last_reviewed:  # set to the date (YYYY-MM-DD) once Dr. Kiruthika approves this page
+last_reviewed: 2026-10-18
 faq:
   - q: Will I look frozen after Botox?
     a: Not when the dose and placement are planned carefully. The aim is to soften lines while keeping natural expression. Dr. Kiruthika prefers a conservative approach, and a small top-up can be added at review if needed.

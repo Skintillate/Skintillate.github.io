@@ -7,7 +7,7 @@ nav_title: Laser Treatments
 intro: Lasers treat scars, uneven skin texture and unwanted hair with precision. Results depend as much on choosing the right laser and settings for your skin as on the machine itself, which is why every laser treatment here is planned by a dermatologist.
 conditions: [Acne scars, Atrophic scars, Hirsutism, Hypertrichosis]
 related: laser-hair-removal,acne,anti-ageing
-last_reviewed:  # set to the date (YYYY-MM-DD) once Dr. Kiruthika approves this page
+last_reviewed: 2026-10-18
 faq:
   - q: Is laser treatment painful?
     a: Most people describe a snapping or warm, prickling feeling. A numbing cream is applied before more intense treatments such as fractional CO₂, and cooling is used during laser hair removal.

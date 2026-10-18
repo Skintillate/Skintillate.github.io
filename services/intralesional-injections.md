@@ -7,7 +7,7 @@ nav_title: Intralesional Injections
 intro: An intralesional injection delivers medicine directly into the affected skin. This places an effective dose exactly where it is needed, with much less effect on the rest of the body than tablets.
 conditions: [Keloid, Hypertrophic scar, Alopecia areata, Acne cyst, Nail psoriasis, Lichen planus]
 related: acne,hair-loss,electrosurgery
-last_reviewed:  # set to the date (YYYY-MM-DD) once Dr. Kiruthika approves this page
+last_reviewed: 2026-10-18
 faq:
   - q: How many injections does a keloid need?
     a: Most keloids need a series of injections, usually 3 to 6 weeks apart, until the keloid flattens and softens. Larger or older keloids need more sessions. Dr. Kiruthika will review the response at each visit.

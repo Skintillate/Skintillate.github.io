@@ -7,7 +7,7 @@ nav_title: Acne & Acne Scars
 intro: Acne is one of the most common skin problems, and it is very treatable. The earlier active acne is brought under control, the fewer marks and scars it leaves behind.
 conditions: [Acne vulgaris, Acne scars, Post-inflammatory hyperpigmentation]
 related: pigmentation,chemical-peels,laser
-last_reviewed:  # set to the date (YYYY-MM-DD) once Dr. Kiruthika approves this page
+last_reviewed: 2026-10-18
 faq:
   - q: Can acne be cured completely?
     a: Acne can be controlled very well with the right treatment, and most people reach a stage where they have few or no breakouts. Because acne is influenced by hormones and genetics, some people need a simple maintenance routine to keep it from coming back.

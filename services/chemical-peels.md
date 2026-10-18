@@ -7,7 +7,7 @@ nav_title: Chemical Peels
 intro: A chemical peel uses a carefully chosen solution to gently remove the outermost layer of dead skin cells, helping fresher, clearer and more even skin come through.
 conditions: [Acne, Hyperpigmentation, Melasma, Photoaging]
 related: acne,pigmentation,anti-ageing
-last_reviewed:  # set to the date (YYYY-MM-DD) once Dr. Kiruthika approves this page
+last_reviewed: 2026-10-18
 faq:
   - q: Are chemical peels safe for Indian skin?
     a: Yes, when the right peel and strength are chosen by a dermatologist. Indian skin can darken after strong or poorly chosen peels, so we start with gentler peels, prepare the skin beforehand and increase strength gradually.

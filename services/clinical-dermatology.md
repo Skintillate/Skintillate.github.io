@@ -7,7 +7,7 @@ nav_title: Clinical Dermatology
 intro: Many skin problems look alike but need very different treatment. An accurate diagnosis by a dermatologist is the first step to getting it right.
 conditions: [Eczema, Psoriasis, Urticaria, Tinea (fungal skin infection), Vitiligo, Seborrheic dermatitis, Scabies]
 related: acne,pigmentation,nail
-last_reviewed:  # set to the date (YYYY-MM-DD) once Dr. Kiruthika approves this page
+last_reviewed: 2026-10-18
 faq:
   - q: When should I see a dermatologist instead of a general doctor?
     a: See a dermatologist if a skin, hair or nail problem has not improved with treatment, keeps coming back, is spreading, or is affecting your sleep, work or confidence. Also see one for any mole or spot that is new, changing or bleeding.

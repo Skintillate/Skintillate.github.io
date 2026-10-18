@@ -7,7 +7,7 @@ nav_title: Hair Loss (PRP & GFC)
 intro: Losing some hair every day is normal, but noticeable thinning, a widening parting or bald patches are not. Hair loss has many causes, and finding yours is the key to treating it.
 conditions: [Androgenetic alopecia, Female pattern hair loss, Telogen effluvium, Alopecia areata, Seborrheic dermatitis]
 related: intralesional,clinical-dermatology,nail
-last_reviewed:  # set to the date (YYYY-MM-DD) once Dr. Kiruthika approves this page
+last_reviewed: 2026-10-18
 faq:
   - q: Is hair fall after fever or illness permanent?
     a: Usually not. Heavy shedding two to three months after fever, dengue, COVID-19, surgery, childbirth or crash dieting is called telogen effluvium. It typically settles within 3 to 6 months once the cause is corrected, though treatment can support regrowth.

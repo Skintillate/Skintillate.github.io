@@ -7,7 +7,7 @@ nav_title: Wart, Skin Tag & Mole Removal
 intro: Electrosurgery and electrofulguration are precise ways to remove small skin growths, usually in a single short visit under local anaesthesia.
 conditions: [Warts, Skin tags (acrochordons), Melanocytic nevus (mole), Dermatosis papulosa nigra, Seborrheic keratosis, Milia]
 related: clinical-dermatology,laser,intralesional
-last_reviewed:  # set to the date (YYYY-MM-DD) once Dr. Kiruthika approves this page
+last_reviewed: 2026-10-18
 faq:
   - q: Is the procedure painful?
     a: The area is numbed with a cream or a small local anaesthetic injection first, so most people feel little more than a pinprick and slight warmth during the procedure.
