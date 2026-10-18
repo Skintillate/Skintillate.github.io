@@ -1,6 +1,6 @@
 # Skintillate Skin Clinic website
 
-Website for Dr. Kiruthika's Skintillate Skin Clinic, Salem. The site is published at https://skintillate.github.io/.
+Website for Dr. Kiruthika's Skintillate Skin Clinic, Salem. The site is published at https://skintillate.co.in/.
 
 It's a static site built with [Jekyll](https://jekyllrb.com/). GitHub Pages builds it automatically on every push to `main`, so there's no build step to run and no server to manage.
 
@@ -63,6 +63,6 @@ Pages that haven't been translated yet never link to a missing page.
 
 ## After launch
 
-- Verify the site in [Google Search Console](https://search.google.com/search-console) and submit `https://skintillate.github.io/sitemap.xml`.
+- Verify the site in [Google Search Console](https://search.google.com/search-console) and submit `https://skintillate.co.in/sitemap.xml`.
 - Add the website link to the Google Business Profile and the Instagram bio.
 - Check each page with Google's [Rich Results Test](https://search.google.com/test/rich-results) and [PageSpeed Insights](https://pagespeed.web.dev/).
