@@ -29,6 +29,7 @@ Once a page is approved, set `last_reviewed:` in its front matter to the approva
 
 ## Other pages
 
+- **Privacy policy** (`privacy.html`): drafted for the analytics set-up. Please read it, and have it checked by whoever advises the clinic on data-protection rules.
 - **Doctor profile:** confirm the wording of qualifications and the registration number (TNMC 117795).
 - **Home and clinic pages:** wording is adapted from the original carrd site. The line about care being "affordable" was removed to comply with the no-pricing rule.
 

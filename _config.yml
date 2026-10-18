@@ -5,6 +5,11 @@ baseurl: ""
 # Default language. Other languages live under /<lang>/ (e.g. /ta/) and are
 # linked to their English page through a shared `ref` in the front matter.
 lang: en
+
+# Google Analytics 4 Measurement ID (looks like G-XXXXXXXXXX). Leave empty to switch analytics off.
+# It only runs on the live site, never in local previews.
+google_analytics: "G-0X8QWK9B33"
+
 languages: [en, ta]
 
 permalink: pretty

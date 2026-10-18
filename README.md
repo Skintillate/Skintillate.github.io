@@ -62,6 +62,18 @@ Once a translated page exists, its English and Tamil versions automatically get:
 
 Pages that haven't been translated yet never link to a missing page.
 
+## Analytics (Google Analytics 4)
+
+Analytics is built in but switched off until a Measurement ID is set.
+
+1. In [Google Analytics](https://analytics.google.com/), create a property for the website with a **web data stream** and copy its Measurement ID (`G-XXXXXXXXXX`).
+2. Put it in `_config.yml`: `google_analytics: "G-XXXXXXXXXX"`, then commit and push.
+3. It only runs on the live site, never in local previews. Opening the site and checking the **Realtime** report in Google Analytics confirms it works.
+
+Taps on the contact links are recorded as the events `click_call`, `click_whatsapp`, `click_email`, `click_directions` and `click_instagram`, each with a `link_location` value (`header`, `mobile_bar`, `cta_band`, `content` or `footer`). In Google Analytics, open Admin, then Events, and mark `click_call`, `click_whatsapp` and `click_directions` as key events. To see the `link_location` values in reports, register it under Admin, then Custom definitions, as an event-scoped custom dimension.
+
+Privacy settings in place: Google signals and ad personalisation are off, and advertising consent is denied by default. In Google Analytics, also set **Data retention** to 14 months (Admin, Data settings). Never add names, phone numbers or health details to page addresses or events. The site's privacy page is `privacy.html`, and its wording should be updated if analytics settings change.
+
 ## After launch
 
 - Verify the site in [Google Search Console](https://search.google.com/search-console) and submit `https://skintillate.co.in/sitemap.xml`.
