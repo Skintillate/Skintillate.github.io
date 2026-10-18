@@ -223,6 +223,7 @@ h3 { font-size: 1.45rem; }
 .check-list li { display: flex; gap: .7em; align-items: flex-start; padding: .35em 0; }
 .check-list .icon { color: var(--sage); margin-top: .3em; }
 
+.doctor-creds { font-weight: 500; color: var(--rose); }
 .credentials { display: grid; gap: 12px; list-style: none; padding: 0; margin: 1.5rem 0; }
 .credentials li { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 14px 18px; }
 .credentials strong { display: block; color: var(--ink); }

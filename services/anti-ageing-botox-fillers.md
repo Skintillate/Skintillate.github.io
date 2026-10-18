@@ -51,7 +51,6 @@ Not every concern needs injections. Treatments that improve skin quality, tone a
 - **Skin boosters**: injectable hyaluronic acid that hydrates the skin from within for a natural glow.
 - **Microneedling**, with or without PRP, to stimulate collagen and refine texture.
 - **[Fractional CO₂ laser](/services/laser-treatment/)** for fine lines, pores and uneven texture.
-- **[Q-switched laser toning](/services/laser-treatment/)** for dullness and uneven tone.
 - **[Chemical peels](/services/chemical-peels/)** and **HydraFacial** for brightness and smoothness.
 - **Prescription creams** such as retinoids, together with daily sunscreen, the foundation of any anti-ageing plan.
 

@@ -46,7 +46,7 @@ Not every mark that acne leaves behind is a scar. Flat brown or red marks usuall
 
 | Type | What it looks like | Treatments that may help |
 |---|---|---|
-| Dark or red marks | Flat brown, red or purple spots | Creams, chemical peels, [Q-switched laser](/services/laser-treatment/) |
+| Dark or red marks | Flat brown, red or purple spots | Creams, chemical peels |
 | Rolling scars | Wide, wave-like dips | Subcision, microneedling, fractional CO₂ laser |
 | Boxcar scars | Broad dips with sharp edges | Fractional CO₂ laser, microneedling, peels |
 | Ice-pick scars | Narrow, deep pits | Focal TCA (CROSS) technique |

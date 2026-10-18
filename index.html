@@ -15,7 +15,7 @@ nav_title: Home
       <ul class="hero-facts">
         <li>{% include icon.html name="clock" %}<span>Mon–Sat, 11 AM – 7 PM</span></li>
         <li>{% include icon.html name="pin" %}<span>North Alagapuram, Salem</span></li>
-        <li>{% include icon.html name="check" %}<span>MD (PGIMER), DNB dermatologist</span></li>
+        <li>{% include icon.html name="check" %}<span>{{ clinic.doctor.qualifications }}</span></li>
       </ul>
     </div>
     <div class="hero-media">
@@ -66,6 +66,7 @@ nav_title: Home
     <div>
       <p class="eyebrow">{% include icon.html name="leaf" %}<span>Meet the doctor</span></p>
       <h2 id="doctor-title">{{ clinic.doctor.name }}, Consultant Dermatologist</h2>
+      <p class="doctor-creds">{{ clinic.doctor.qualifications }} · {{ clinic.doctor.registration }}</p>
       <p>Dr. Kiruthika is a dermatologist with over 10 years of experience, bringing together academic training, clinical expertise, research and a passion for aesthetic medicine.</p>
       <ul class="check-list">
         <li>{% include icon.html name="check" %}<span>MBBS, Madras Medical College, Chennai</span></li>

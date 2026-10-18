@@ -65,12 +65,15 @@
       "name": {{ clinic.doctor.name | jsonify }},
       "honorificPrefix": "Dr.",
       "jobTitle": "Consultant Dermatologist",
+      "honorificSuffix": {{ clinic.doctor.qualifications | jsonify }},
+      "description": {{ clinic.doctor.name | append: ", " | append: clinic.doctor.qualifications | jsonify }},
       "url": {{ doctor_url | jsonify }},
       "image": {{ "/assets/img/dr-kiruthika-dermatologist-salem-506.webp" | absolute_url | jsonify }},
       "worksFor": { "@id": {{ clinic_id | jsonify }} },
       "alumniOf": [
         { "@type": "CollegeOrUniversity", "name": "Madras Medical College, Chennai" },
-        { "@type": "CollegeOrUniversity", "name": "Postgraduate Institute of Medical Education and Research (PGIMER), Chandigarh" }
+        { "@type": "CollegeOrUniversity", "name": "Postgraduate Institute of Medical Education and Research (PGIMER), Chandigarh" },
+        { "@type": "CollegeOrUniversity", "name": "Jawaharlal Institute of Postgraduate Medical Education and Research (JIPMER), Puducherry" }
       ],
       "hasCredential": [
         { "@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "name": "MBBS" },

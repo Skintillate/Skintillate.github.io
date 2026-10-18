@@ -19,7 +19,7 @@
   group: dermatology
   en:
     name: Pigmentation & Melasma
-    blurb: Care for melasma, dark spots, tanning and uneven skin tone with creams, peels and Q-switched laser.
+    blurb: Care for melasma, dark spots, tanning and uneven skin tone with prescription creams, chemical peels and sun protection.
 
 - ref: hair-loss
   slug: hair-loss-treatment-prp-gfc
@@ -54,7 +54,7 @@
   group: aesthetics
   en:
     name: Laser Treatments
-    blurb: Q-switched Nd:YAG, fractional CO₂ and diode lasers for pigmentation, scars, tattoos and hair removal.
+    blurb: Fractional CO₂ laser for acne scars and skin texture, and diode laser for hair removal.
 
 - ref: laser-hair-removal
   slug: laser-hair-removal

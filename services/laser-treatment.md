@@ -1,12 +1,12 @@
 ---
 ref: laser
 title: Laser Skin Treatment in Salem | Skintillate Skin Clinic
-description: Dermatologist-performed laser treatments in Salem with Q-switched Nd:YAG for pigmentation and tattoos, fractional CO₂ for scars, and diode laser hair removal.
+description: Dermatologist-performed laser treatments in Salem, with fractional CO₂ laser for acne scars and skin texture and diode laser for hair removal.
 heading: Laser Skin Treatments in Salem
 nav_title: Laser Treatments
-intro: Lasers treat pigmentation, scars, unwanted hair and tattoos with precision. Results depend as much on choosing the right laser and settings for your skin as on the machine itself, which is why every laser treatment here is planned by a dermatologist.
-conditions: [Hyperpigmentation, Melasma, Acne scars, Hirsutism, Tattoo, Nevus of Ota]
-related: laser-hair-removal,pigmentation,acne
+intro: Lasers treat scars, uneven skin texture and unwanted hair with precision. Results depend as much on choosing the right laser and settings for your skin as on the machine itself, which is why every laser treatment here is planned by a dermatologist.
+conditions: [Acne scars, Atrophic scars, Hirsutism, Hypertrichosis]
+related: laser-hair-removal,acne,anti-ageing
 last_reviewed:  # set to the date (YYYY-MM-DD) once Dr. Kiruthika approves this page
 faq:
   - q: Is laser treatment painful?
@@ -14,23 +14,17 @@ faq:
   - q: Is laser safe for dark or Indian skin?
     a: Yes, with the right choice of laser and carefully adjusted settings. Darker skin is more prone to temporary darkening or lightening after laser, so we start gently, test where needed and insist on sun protection before and after treatment.
   - q: How many sessions will I need?
-    a: Most laser treatments need a course of sessions. As a guide, pigmentation needs several sessions 2 to 4 weeks apart, scars 3 to 5 sessions 4 to 6 weeks apart, and hair removal 6 to 8 sessions. Your plan is tailored after your consultation.
-  - q: Can a tattoo be removed completely?
-    a: Black and dark blue ink usually respond well over several sessions. Some colours, such as green, yellow and light blue, are harder to remove and may only fade. Dr. Kiruthika will examine your tattoo and explain what is realistic.
+    a: Most laser treatments need a course of sessions. As a guide, scars usually need 3 to 5 sessions 4 to 6 weeks apart, and hair removal 6 to 8 sessions. Your plan is tailored after your consultation.
   - q: Is there any downtime?
-    a: Q-switched laser and laser hair removal usually involve only mild redness for a few hours. Fractional CO₂ laser causes redness, swelling and fine crusting for about 3 to 7 days.
+    a: Laser hair removal usually involves only mild redness for a few hours. Fractional CO₂ laser causes redness, swelling and fine crusting for about 3 to 7 days.
 ---
 
-## Lasers at our clinic
+## Laser treatments
 
 | Laser | What it treats | Typical course |
 |---|---|---|
-| Q-switched Nd:YAG | Melasma and pigmentation (laser toning), freckles, sun spots, nevus of Ota, tattoo removal, carbon laser peel | Several sessions, 2 to 4 weeks apart |
 | Fractional CO₂ | Acne scars, chickenpox and surgical scars, open pores, fine lines, uneven texture, stretch marks | 3 to 5 sessions, 4 to 6 weeks apart |
 | Diode | [Laser hair removal](/services/laser-hair-removal/) for the face and body | 6 to 8 sessions, 4 to 6 weeks apart |
-
-### Q-switched Nd:YAG laser
-This laser releases energy in extremely short pulses that break excess pigment or tattoo ink into tiny particles, which the body then clears. Its longer wavelength is well suited to Indian skin. It is also used for the **carbon laser peel**, a quick treatment for oily skin, open pores and dullness. See also [pigmentation treatment](/services/pigmentation-treatment/).
 
 ### Fractional CO₂ laser
 The laser creates microscopic columns of treatment in the skin, leaving the surrounding skin intact to speed healing. This stimulates new collagen, gradually smoothing scars and improving texture. See also [acne scar treatment](/services/acne-scar-treatment/).
