@@ -1,0 +1,39 @@
+---
+layout: null
+sitemap: false
+---
+{%- assign c = site.data.clinic -%}
+{%- assign t = site.data.i18n.en -%}
+# {{ c.name }}
+
+> Dermatology and aesthetic clinic for skin, hair and nails in {{ c.address.locality }}, {{ c.address.city }}, {{ c.address.region }}, India, led by dermatologist {{ c.doctor.name }} ({{ c.doctor.qualifications }}; {{ c.doctor.registration }}). Appointments by phone or WhatsApp.
+
+The treatment pages are general patient information reviewed by Dr. Kiruthika. They are not a substitute for a consultation. Fees are not published on this website; please contact the clinic.
+
+## Clinic details
+
+- Name: {{ c.name }}
+- Address: {{ t.address_lines | join: " " }}
+- Phone and WhatsApp: {{ c.phone_display }}
+- Email: {{ c.email }}
+- Opening hours: {{ t.hours_days }}, {{ t.hours_time }}. {{ t.closed_day }}: {{ t.closed | downcase }}.
+- Google Maps: {{ c.maps_url }}
+- Instagram: {{ c.instagram }}
+- Doctor: {{ c.doctor.name }}, {{ c.doctor.qualifications }}. {{ c.doctor.registration }}.
+
+## Main pages
+
+- [Home]({{ "/" | absolute_url }}): overview of the clinic and its treatments
+- [Dr. Kiruthika]({{ "/dr-kiruthika/" | absolute_url }}): the doctor's training, qualifications and registration
+- [Our clinic]({{ "/clinic/" | absolute_url }}): consultation room, procedure room, in-house pharmacy and waiting area
+- [Contact and directions]({{ "/contact/" | absolute_url }}): address, map, opening hours and how to book
+- [All treatments]({{ "/services/" | absolute_url }}): overview of every treatment
+
+## Treatments
+
+{% for s in site.data.services -%}
+- [{{ s.en.name }}]({{ "/services/" | append: s.slug | append: "/" | absolute_url }}): {{ s.en.blurb }}
+{% endfor %}
+## Optional
+
+- [Sitemap]({{ "/sitemap.xml" | absolute_url }})

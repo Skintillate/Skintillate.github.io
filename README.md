@@ -16,6 +16,7 @@ It's a static site built with [Jekyll](https://jekyllrb.com/). GitHub Pages buil
 | Page templates | `_layouts/`, `_includes/` |
 | Styles | `assets/css/main.css` |
 | Optimised images, icons, social-share image | `assets/img/` |
+| Plain-text summary for AI tools (generated from the data files, edit those instead) | `llms.txt` |
 
 **Changing the phone number, hours or address:** edit `_data/clinic.yml` and the address lines in `_data/i18n/en.yml`. Every page, the footer and the structured data for Google update together. Keep them identical to the Google Business Profile.
 
