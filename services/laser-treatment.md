@@ -1,7 +1,7 @@
 ---
 ref: laser
 title: Laser Skin Treatment in Salem | Skintillate Skin Clinic
-description: Dermatologist-performed laser treatments in Salem, with fractional CO₂ laser for acne scars and skin texture and diode laser for hair removal.
+description: Dermatologist-performed laser treatments in Salem, with fractional CO₂ laser for acne scars, stretch marks and skin texture, and diode laser for hair removal.
 heading: Laser Skin Treatments in Salem
 nav_title: Laser Treatments
 intro: Lasers treat scars, uneven skin texture and unwanted hair with precision. Results depend as much on choosing the right laser and settings for your skin as on the machine itself, which is why every laser treatment here is planned by a dermatologist.
@@ -26,7 +26,7 @@ faq:
 | Fractional CO₂ | Acne scars, chickenpox and surgical scars, open pores, fine lines, uneven texture, stretch marks | 3 to 5 sessions, 4 to 6 weeks apart |
 | Diode | [Laser hair removal](/services/laser-hair-removal/) for the face and body | 6 to 8 sessions, 4 to 6 weeks apart |
 
-### Fractional CO₂ laser
+### Fractional CO₂ laser for scars and stretch marks
 The laser creates microscopic columns of treatment in the skin, leaving the surrounding skin intact to speed healing. This stimulates new collagen, gradually smoothing scars and improving texture. See also [acne scar treatment](/services/acne-scar-treatment/).
 
 ### Diode laser
