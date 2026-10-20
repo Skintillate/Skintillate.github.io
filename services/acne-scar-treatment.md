@@ -1,10 +1,10 @@
 ---
 ref: acne
 title: Acne & Acne Scar Treatment in Salem | Skintillate
-description: Dermatologist-led acne and acne scar treatment in Salem. Medicines, chemical peels, microneedling, subcision and fractional CO₂ laser, planned by Dr. Kiruthika.
+description: Dermatologist-led treatment for pimples, acne and acne scars in Salem. Medicines, peels, microneedling, subcision and fractional CO₂ laser by Dr. Kiruthika.
 heading: Acne & Acne Scar Treatment in Salem
 nav_title: Acne & Acne Scars
-intro: Acne is one of the most common skin problems, and it is very treatable. The earlier active acne is brought under control, the fewer marks and scars it leaves behind.
+intro: Acne, or pimples, is one of the most common skin problems, and it is very treatable. The earlier active acne is brought under control, the fewer marks and scars it leaves behind.
 conditions: [Acne vulgaris, Acne scars, Post-inflammatory hyperpigmentation]
 related: pigmentation,chemical-peels,laser
 last_reviewed: 2026-10-18
@@ -30,7 +30,7 @@ faq:
 - Acne on the back, chest and shoulders
 - Acne triggered by cosmetics, hair oils, steroid creams or medicines
 
-## Treating active acne
+## How to get rid of pimples and active acne
 
 At your first visit, Dr. Kiruthika examines your skin and asks about the products you use, any medicines you take and, where relevant, your menstrual cycle. She then grades the severity of your acne and plans treatment around it. Your plan may include:
 
