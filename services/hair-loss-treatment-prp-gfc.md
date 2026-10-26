@@ -1,7 +1,7 @@
 ---
 ref: hair-loss
 title: Hair Fall Treatment in Salem – PRP & GFC | Skintillate
-description: Dermatologist-led hair fall and hair loss treatment in Salem. Diagnosis of the cause, medicines, PRP and GFC therapy for thinning hair, alopecia and dandruff.
+description: Dermatologist-led hair fall treatment in Salem. Diagnosis of the cause, medicines, and PRP and GFC therapy to support hair regrowth for thinning hair and alopecia.
 heading: Hair Fall & Hair Loss Treatment in Salem (PRP & GFC)
 nav_title: Hair Loss (PRP & GFC)
 intro: Losing some hair every day is normal, but noticeable thinning, a widening parting or bald patches are not. Hair loss has many causes, and finding yours is the key to treating it.
@@ -15,7 +15,7 @@ faq:
     a: Both use growth factors from your own blood. In PRP, platelet-rich plasma is separated and injected into the scalp. In GFC, the platelets are processed further so that the growth factors are released and concentrated before injection. Dr. Kiruthika will advise which suits you.
   - q: Are PRP and GFC painful?
     a: Most people feel mild discomfort. A numbing cream is applied before the injections, and any soreness usually settles within a day.
-  - q: How soon will I see results?
+  - q: How soon will I see results from hair regrowth treatment?
     a: Hair grows slowly, so improvement is usually noticed after about 3 months, with fuller results by 6 months. Taking photos at each visit helps track progress.
   - q: Do hair loss medicines have to be continued?
     a: For pattern hair loss, which is a long-term condition, some form of maintenance treatment is usually needed to keep the improvement. For temporary causes such as telogen effluvium, medicines can often be stopped once the hair recovers.
@@ -42,7 +42,7 @@ Dr. Kiruthika takes a detailed history and closely examines your scalp and hair.
 Topical and oral treatments such as minoxidil and, for suitable patients, other prescription medicines. Nutritional deficiencies are corrected with supplements.
 
 ### PRP (platelet-rich plasma) therapy
-A small amount of your blood is drawn and spun to separate platelet-rich plasma, which is rich in growth factors. It is then injected into the thinning areas of the scalp to support hair growth. A typical course is 3 to 4 sessions about a month apart, followed by maintenance sessions as advised.
+A small amount of your blood is drawn and spun to separate platelet-rich plasma, which is rich in growth factors. It is then injected into the thinning areas of the scalp to support hair regrowth. A typical course is 3 to 4 sessions about a month apart, followed by maintenance sessions as advised.
 
 ### GFC (growth factor concentrate) therapy
 GFC is also prepared from your own blood. The platelets are activated so they release their growth factors, which are concentrated and injected into the scalp. Sessions follow a similar schedule to PRP.

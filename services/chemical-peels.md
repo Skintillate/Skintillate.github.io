@@ -1,7 +1,7 @@
 ---
 ref: chemical-peels
 title: Chemical Peels in Salem | Skintillate Skin Clinic
-description: Dermatologist-supervised chemical peels in Salem for acne, pigmentation, melasma, tanning, dull skin, open pores and fine lines, plus HydraFacial.
+description: Dermatologist-supervised chemical peels in Salem for acne, pigmentation, melasma, tan removal, dull skin, open pores and fine lines, plus HydraFacial.
 heading: Chemical Peels in Salem
 nav_title: Chemical Peels
 intro: A chemical peel uses a carefully chosen solution to gently remove the outermost layer of dead skin cells, helping fresher, clearer and more even skin come through.
@@ -25,7 +25,7 @@ faq:
 
 - Active acne, blackheads and whiteheads
 - Acne marks and mild scars
-- Melasma, tanning and uneven skin tone
+- Tan removal, melasma and uneven skin tone
 - Dull, tired-looking skin
 - Oily skin and open pores
 - Fine lines and early signs of sun damage
