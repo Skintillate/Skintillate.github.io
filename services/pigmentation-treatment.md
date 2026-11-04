@@ -1,17 +1,17 @@
 ---
 ref: pigmentation
 title: Pigmentation & Melasma Treatment in Salem | Skintillate
-description: Dermatologist treatment for melasma, dark spots, tanning, dark circles and uneven skin tone in Salem with prescription creams, chemical peels and sun protection.
+description: Dermatologist care in Salem for melasma, dark spots on face, tan removal, dark circles and uneven skin tone, with prescription creams, peels and sun protection.
 heading: Pigmentation & Melasma Treatment in Salem
 nav_title: Pigmentation & Melasma
-intro: Dark patches and uneven skin tone are among the most common reasons people visit a dermatologist. The right treatment depends on what is causing the pigmentation, so an accurate diagnosis comes first.
+intro: Dark spots on the face, dark patches and uneven skin tone are among the most common reasons people visit a dermatologist. The right treatment depends on what is causing the pigmentation, so an accurate diagnosis comes first.
 conditions: [Melasma, Hyperpigmentation, Post-inflammatory hyperpigmentation, Solar lentigines, Periorbital hyperpigmentation, Acanthosis nigricans]
 related: chemical-peels,acne,clinical-dermatology
 last_reviewed: 2026-10-18
 faq:
   - q: Can melasma be cured permanently?
     a: Melasma can be lightened significantly, but it is a long-term condition that can return with sun exposure, heat or hormonal changes. Daily sun protection and a maintenance routine help keep it under control after treatment.
-  - q: How many sessions will I need?
+  - q: How many sessions will I need for dark spots or tan removal?
     a: It depends on the type and depth of pigmentation. Peel sessions are usually spaced 2 to 4 weeks apart, and most people need a course of several sessions. Dr. Kiruthika will give you an estimate after examining your skin.
   - q: Can I use fairness creams?
     a: Avoid unprescribed fairness or "skin-whitening" creams. Many contain strong steroids or mercury that can damage the skin and worsen pigmentation over time. Use only the creams your dermatologist prescribes.
@@ -24,7 +24,7 @@ faq:
 - **Melasma.** Brown or grey-brown patches on the cheeks, forehead, nose or upper lip, often linked to sun, heat, pregnancy or hormonal medicines.
 - **Dark marks after acne, injury or rashes** (post-inflammatory hyperpigmentation).
 - **Sun spots, freckles and tanning.**
-- **Dark circles** under the eyes.
+- **Dark circles** under the eyes. Dark circles treatment is planned after finding the cause.
 - **Dark, velvety skin on the neck, underarms or knuckles** (acanthosis nigricans), which can be linked to insulin resistance, weight or PCOS.
 - **Pigmentation around the mouth and lips.**
 - **Pigmentation from cosmetics, hair dye or medicines.**
@@ -45,7 +45,7 @@ Ingredients such as azelaic acid, kojic acid, retinoids, niacinamide and, for sh
 For selected people with melasma, tablets such as tranexamic acid may be added after a health check.
 
 ### Chemical peels
-Glycolic, lactic, mandelic, salicylic and combination peels lift away pigmented surface cells. [Read more about chemical peels](/services/chemical-peels/).
+Glycolic, lactic, mandelic, salicylic and combination peels lift away pigmented surface cells and are also used for tan removal. [Read more about chemical peels](/services/chemical-peels/).
 
 ### HydraFacial and medi-facials
 Gentle cleansing and hydrating treatments that brighten the skin and support the main treatment plan.

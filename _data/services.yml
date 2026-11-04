@@ -54,7 +54,7 @@
   group: aesthetics
   en:
     name: Laser Treatments
-    blurb: Fractional CO₂ laser for acne scars and skin texture, and diode laser for hair removal.
+    blurb: Fractional CO₂ laser for acne scars, stretch marks and skin texture, and diode laser for hair removal.
 
 - ref: laser-hair-removal
   slug: laser-hair-removal
