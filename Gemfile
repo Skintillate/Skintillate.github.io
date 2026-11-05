@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 # Matches the Jekyll version and plugins GitHub Pages uses to build the site.
-gem "github-pages", ">= 232", group: :jekyll_plugins
+gem "github-pages", "= 233", group: :jekyll_plugins
 
 # Needed for local builds on newer Ruby versions, which no longer bundle these.
 gem "webrick"
