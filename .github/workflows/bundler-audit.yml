@@ -1,0 +1,39 @@
+name: Ruby dependency audit
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  schedule:
+    - cron: '30 3 * * 1'    # Mondays 09:00 IST
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: bundler-audit-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  bundler-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+
+      # bundler-audit only reads Gemfile.lock, so the full bundle is not installed.
+      - name: Install bundler-audit
+        run: gem install bundler-audit -v '~> 0.9' --no-document
+
+      - name: Audit Gemfile.lock
+        run: bundle-audit check --update --verbose
