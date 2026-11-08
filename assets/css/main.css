@@ -1,6 +1,17 @@
 /* Skintillate Skin Clinic — site styles.
    Colours come from the logo: rose "Skin", charcoal "tillate", sage leaves, blush background. */
 
+
+/* Self-hosted fonts (variable WOFF2, latin subset) — avoids a render-blocking request to Google Fonts. */
+@font-face {
+  font-family: "Cormorant Garamond"; font-style: normal; font-weight: 500 600; font-display: swap;
+  src: url("/assets/fonts/cormorant-garamond-latin.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Jost"; font-style: normal; font-weight: 400 500; font-display: swap;
+  src: url("/assets/fonts/jost-latin.woff2") format("woff2");
+}
+
 :root {
   --bg: #FDF5F3;          /* logo background — the JPEG logo blends into it */
   --surface: #FFFFFF;
