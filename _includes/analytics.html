@@ -1,5 +1,5 @@
 {%- comment -%}
-  Google Analytics 4. Renders nothing unless this is a production build AND a Measurement ID is set
+  Google Analytics 4 (gtag.js loads late, see below). Renders nothing unless this is a production build AND a Measurement ID is set
   in _config.yml (google_analytics: G-XXXXXXXXXX), so local previews are never counted.
 
   Privacy settings: Google signals and ad personalisation are off, and all advertising consent is
@@ -8,7 +8,6 @@
 {%- endcomment -%}
 {%- assign ga_id = site.google_analytics | strip -%}
 {%- if jekyll.environment == "production" and ga_id != "" -%}
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ ga_id }}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag() { dataLayer.push(arguments); }
@@ -17,6 +16,25 @@
   });
   gtag('js', new Date());
   gtag('config', '{{ ga_id }}', { allow_google_signals: false, allow_ad_personalization_signals: false });
+
+  // Load gtag.js off the critical path: on the first scroll, tap or key press, or 5 seconds after
+  // the page has loaded, whichever comes first. The calls above are queued in dataLayer meanwhile,
+  // so nothing is lost; only visits that leave in under ~5 seconds without interacting go uncounted.
+  (function () {
+    var started = false;
+    function load() {
+      if (started) return;
+      started = true;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id={{ ga_id }}';
+      document.head.appendChild(s);
+    }
+    ['scroll', 'pointerdown', 'keydown', 'touchstart'].forEach(function (ev) {
+      window.addEventListener(ev, load, { once: true, passive: true });
+    });
+    window.addEventListener('load', function () { setTimeout(load, 5000); });
+  })();
 
   // Count taps on the clinic's contact links: call, WhatsApp, email, directions, Instagram.
   document.addEventListener('click', function (e) {
