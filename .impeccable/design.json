@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-21T00:00:00.000Z",
+  "title": "Design System: Dr. Kiruthika's Skintillate Skin Clinic",
+  "extensions": {
+    "colorMeta": {
+      "logo-rose": { "role": "primary", "displayName": "Logo Rose", "canonical": "#A5354B", "tonalRamp": ["#3F0F1A", "#5E1727", "#7F2236", "#A5354B", "#C2576B", "#D98A99", "#EBBBC4", "#F8E4E8"] },
+      "logo-leaf": { "role": "secondary", "displayName": "Logo Leaf", "canonical": "#5D6A3C", "tonalRamp": ["#1F2410", "#323A1C", "#46502A", "#5D6A3C", "#7C8A57", "#A2AD84", "#C9D0B3", "#EDEFE1"] },
+      "blush-paper": { "role": "neutral", "displayName": "Blush Paper", "canonical": "#FDF5F3", "tonalRamp": ["#3A2A27", "#6A5450", "#9A8581", "#C9B3AE", "#EBD8D4", "#F7E6E3", "#FBEDEA", "#FDF5F3"] },
+      "charcoal-ink": { "role": "neutral", "displayName": "Charcoal Ink", "canonical": "#3A3131", "tonalRamp": ["#1A1515", "#2A2323", "#3A3131", "#554A4A", "#6A5C5B", "#948887", "#BFB5B4", "#E6E1E0"] },
+      "reception-maroon": { "role": "neutral", "displayName": "Reception Maroon", "canonical": "#5C1F29", "tonalRamp": ["#1F0A0E", "#34121A", "#5C1F29", "#7A3340", "#9A5360", "#BC808A", "#DDB5BB", "#F3E0E3"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Page H1 and hero headlines in Cormorant Garamond." },
+      "headline": { "displayName": "Headline", "purpose": "Section H2." },
+      "title": { "displayName": "Title", "purpose": "Card titles and H3." },
+      "body": { "displayName": "Body", "purpose": "Running text in Jost, capped near 70ch." },
+      "label": { "displayName": "Label", "purpose": "Uppercase tracked eyebrows and footer headings." }
+    },
+    "shadows": [
+      { "name": "soft-lift", "value": "0 1px 2px rgba(92,31,41,.05), 0 8px 24px rgba(92,31,41,.07)", "purpose": "Card hover, arch photos, hero badge." },
+      { "name": "menu-drop", "value": "0 12px 24px rgba(92,31,41,.08)", "purpose": "Mobile navigation panel." },
+      { "name": "bar-rise", "value": "0 -6px 20px rgba(92,31,41,.08)", "purpose": "Fixed mobile call bar." }
+    ],
+    "motion": [
+      { "name": "state-fast", "value": "150ms ease (background-color, border-color, color, box-shadow, transform)", "purpose": "Hover transitions on buttons and cards; disabled under prefers-reduced-motion." }
+    ],
+    "breakpoints": [
+      { "name": "phone", "value": "560px" },
+      { "name": "mobile-bar", "value": "760px" },
+      { "name": "stack", "value": "860px" },
+      { "name": "nav", "value": "900px" },
+      { "name": "service-aside", "value": "960px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Filled rose pill for the main action (WhatsApp, Call).",
+      "html": "<a class=\"ds-btn\" href=\"#\">Chat on WhatsApp</a>",
+      "css": ".ds-btn { display:inline-flex; align-items:center; justify-content:center; min-height:48px; padding:.7em 1.4em; border:1.5px solid #A5354B; border-radius:999px; background:#A5354B; color:#fff; font:500 1rem/1.2 Jost, system-ui, sans-serif; letter-spacing:.01em; text-decoration:none; transition:background-color .15s,border-color .15s,color .15s; } .ds-btn:hover { background:#852638; border-color:#852638; } .ds-btn:focus-visible { outline:2px solid #A5354B; outline-offset:3px; }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary pill for lower-priority actions.",
+      "html": "<a class=\"ds-btn-outline\" href=\"#\">Get directions</a>",
+      "css": ".ds-btn-outline { display:inline-flex; align-items:center; justify-content:center; min-height:48px; padding:.7em 1.4em; border:1.5px solid #A5354B; border-radius:999px; background:transparent; color:#A5354B; font:500 1rem/1.2 Jost, system-ui, sans-serif; text-decoration:none; transition:background-color .15s,color .15s; } .ds-btn-outline:hover { background:#A5354B; color:#fff; } .ds-btn-outline:focus-visible { outline:2px solid #A5354B; outline-offset:3px; }"
+    },
+    {
+      "name": "Treatment Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "White 18px card with a serif title and a rose 'Read more' cue; lifts on hover.",
+      "html": "<div class=\"ds-card\"><h3 class=\"ds-card-title\">Acne scar treatment</h3><p>Short plain-language summary of the treatment.</p><span class=\"ds-card-more\">Read more</span></div>",
+      "css": ".ds-card { display:flex; flex-direction:column; background:#fff; border:1px solid #EBD8D4; border-radius:18px; padding:24px 24px 20px; font:400 1rem/1.7 Jost, system-ui, sans-serif; color:#3A3131; transition:border-color .15s,box-shadow .15s,transform .15s; } .ds-card:hover { border-color:#D6687C; box-shadow:0 1px 2px rgba(92,31,41,.05),0 8px 24px rgba(92,31,41,.07); transform:translateY(-2px); } .ds-card-title { margin:0 0 .4em; font:600 1.45rem/1.12 'Cormorant Garamond', serif; } .ds-card p { margin:0 0 1rem; color:#6A5C5B; font-size:.98rem; } .ds-card-more { color:#A5354B; font-weight:500; font-size:.95rem; }"
+    },
+    {
+      "name": "Navigation Link",
+      "kind": "nav",
+      "refersTo": "button-outline",
+      "description": "Header link with a thin rose underline for hover and current page.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\" aria-current=\"page\">Home</a><a href=\"#\">Treatments</a><a href=\"#\">Contact</a></nav>",
+      "css": ".ds-nav { display:flex; gap:22px; font:500 .98rem Jost, system-ui, sans-serif; } .ds-nav a { color:#3A3131; text-decoration:none; padding:6px 0; border-bottom:1.5px solid transparent; } .ds-nav a:hover, .ds-nav a[aria-current=page] { color:#A5354B; border-bottom-color:currentColor; }"
+    },
+    {
+      "name": "Eyebrow",
+      "kind": "chip",
+      "description": "Sage uppercase tracked label above a headline.",
+      "html": "<span class=\"ds-eyebrow\">Skin clinic, Salem</span>",
+      "css": ".ds-eyebrow { display:inline-flex; align-items:center; gap:.5em; font:500 .8rem Jost, system-ui, sans-serif; letter-spacing:.16em; text-transform:uppercase; color:#5D6A3C; }"
+    },
+    {
+      "name": "Arch Photo",
+      "kind": "custom",
+      "description": "Signature image frame: full semicircle on top, soft corners below, 4:5.",
+      "html": "<div class=\"ds-arch\"></div>",
+      "css": ".ds-arch { width:160px; aspect-ratio:4/5; background:#F7E6E3; border-radius:999px 999px 18px 18px; overflow:hidden; box-shadow:0 1px 2px rgba(92,31,41,.05),0 8px 24px rgba(92,31,41,.07); }"
+    },
+    {
+      "name": "FAQ Item",
+      "kind": "custom",
+      "description": "Native disclosure with a rose plus sign and hairline divider.",
+      "html": "<details class=\"ds-faq\" open><summary>How many sessions are usually needed?</summary><p>Depends on the condition; the doctor advises after examination.</p></details>",
+      "css": ".ds-faq { border-bottom:1px solid #EBD8D4; font:400 1rem/1.7 Jost, system-ui, sans-serif; color:#3A3131; width:320px; } .ds-faq summary { cursor:pointer; list-style:none; padding:16px 36px 16px 0; position:relative; font-weight:500; font-size:1.05rem; } .ds-faq summary::-webkit-details-marker { display:none; } .ds-faq summary::after { content:'+'; position:absolute; right:4px; top:50%; transform:translateY(-50%); font-size:1.5rem; color:#A5354B; font-weight:400; } .ds-faq[open] summary::after { content:'\\2013'; } .ds-faq p { margin:0 0 12px; color:#6A5C5B; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Blush Parlour",
+    "overview": "The site feels like a soft, well-kept parlour: blush paper, a single deep rose for everything you can act on, small sage leaves for quiet supporting marks, and a maroon footer borrowed from the clinic's reception desk. The palette is taken from the logo, whose JPEG background is the page colour so the mark sits on the page with no box around it. Headlines are a high-contrast serif; everything else is a clean geometric sans.",
+    "keyCharacteristics": [
+      "Blush-paper ground with white cards and hairline rose borders.",
+      "One action colour (logo rose); sage appears only as small icons and eyebrows.",
+      "Serif display type over a light sans body.",
+      "Arch-framed photography, pill buttons, 18px cards.",
+      "Flat at rest; a faint maroon-tinted shadow only on hover and on floating surfaces.",
+      "Tap-first on mobile: a fixed Call / WhatsApp bar under 760px."
+    ],
+    "rules": [
+      { "name": "The One Action Colour Rule", "body": "If something is tappable and meaningful, it is Logo Rose. Sage and maroon never signal action.", "section": "colors" },
+      { "name": "The Paper Rule", "body": "Backgrounds are blush paper, white or blush tint. Pure grey and cool neutrals do not appear.", "section": "colors" },
+      { "name": "The Serif-For-Voice Rule", "body": "Cormorant is used for headings, the brand name and the signature line. Never for UI labels, buttons or body text.", "section": "typography" },
+      { "name": "The Self-Hosted Rule", "body": "Fonts load from /assets/fonts as latin-subset WOFF2 with font-display: swap. No third-party font requests. Tamil will need its own self-hosted face.", "section": "typography" },
+      { "name": "The Flat-At-Rest Rule", "body": "Cards have no shadow until hovered. Shadows are always tinted maroon, never neutral black.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do use Logo Rose (#A5354B) for every link, primary action and active state.",
+      "Do frame portrait and clinic photos in the arch shape at 4:5.",
+      "Do keep text on blush paper at Charcoal Ink or Muted Ink; Logo Rose for text is allowed on blush paper and white.",
+      "Do keep hit targets at 48px or larger, with a 40px minimum for small buttons.",
+      "Do respect reduced motion: transitions are disabled under prefers-reduced-motion.",
+      "Do tint every shadow with maroon (92,31,41)."
+    ],
+    "donts": [
+      "Don't use Logo Rose Soft (#D6687C) for text; it is decorative only.",
+      "Don't use sage for anything tappable.",
+      "Don't introduce gradients, gradient text, glows or a dark theme.",
+      "Don't load web fonts from third-party hosts.",
+      "Don't add visual claims the copy rules forbid: no price badges, award or \"best\" ribbons, star ratings, testimonial cards or before-and-after pairs."
+    ]
+  }
+}
