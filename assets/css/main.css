@@ -342,6 +342,7 @@ h3 { font-size: 1.45rem; }
 .site-footer { background: var(--maroon); color: var(--on-dark); padding: 64px 0 24px; font-size: .97rem; }
 .site-footer a { color: var(--on-dark); text-decoration-color: rgba(248, 236, 233, .4); }
 .site-footer a:hover { color: #fff; }
+.site-footer :focus-visible { outline-color: var(--on-dark); } /* rose ring is 1.9:1 on maroon; on-dark is 10.8:1 */
 .footer-grid { display: grid; grid-template-columns: 1.3fr 1.3fr 1fr 1fr; gap: 40px; }
 .footer-name { font: 600 1.6rem/1.2 var(--font-display); color: #fff; }
 .footer-doctor { opacity: .85; font-size: .92rem; }
