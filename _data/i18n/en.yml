@@ -30,6 +30,13 @@ hours_days: Monday – Saturday
 hours_time: 11:00 AM – 7:00 PM
 closed_day: Sunday
 closed: Closed
+# Live opening status in the home hero, chosen by the visitor's time in Salem (IST).
+# hours_short is shown when JavaScript does not run.
+hours_short: Mon–Sat, 11 AM – 7 PM
+status_open: Open now · until 7 PM today
+status_opens_today: Opens today at 11 AM
+status_opens_tomorrow: Closed now · opens tomorrow at 11 AM
+status_opens_monday: Closed now · opens Monday at 11 AM
 address_title: Address
 address_lines:
   - "No: 54, Srinivasa Complex,"

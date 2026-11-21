@@ -13,8 +13,11 @@ nav_title: Home
       <p class="lead">At Dr. Kiruthika's Skintillate Skin Clinic, your skin specialist is a qualified dermatologist. Expert dermatological care and modern aesthetic treatments come together to help you achieve healthy, radiant and naturally beautiful skin.</p>
       {% include contact-buttons.html %}
       <ul class="hero-facts">
-        <li>{% include icon.html name="clock" %}<span>Mon–Sat, 11 AM – 7 PM</span></li>
-        <li>{% include icon.html name="pin" %}<span>North Alagapuram, Salem</span></li>
+        <li class="open-status" data-open-status
+            data-opens="{{ clinic.hours.opens }}" data-closes="{{ clinic.hours.closes }}"
+            data-open="{{ t.status_open }}" data-opens-today="{{ t.status_opens_today }}"
+            data-opens-tomorrow="{{ t.status_opens_tomorrow }}" data-opens-monday="{{ t.status_opens_monday }}">{% include icon.html name="clock" %}<span>{{ t.hours_short }}</span></li>
+        <li>{% include icon.html name="pin" %}<a href="{{ clinic.maps_url }}" rel="noopener" target="_blank">North Alagapuram, Salem</a></li>
         <li>{% include icon.html name="graduation" %}<span>{{ quals_html }}</span></li>
       </ul>
     </div>
@@ -33,6 +36,25 @@ nav_title: Home
     </div>
   </div>
 </section>
+<script>
+  // Replace the static hours with today's status, using clinic time (IST) whatever the visitor's time zone.
+  // Open Monday to Saturday; Sunday closed (matches _data/clinic.yml).
+  (function () {
+    var el = document.querySelector('[data-open-status]');
+    if (!el) return;
+    function mins(hhmm) { var p = hhmm.split(':'); return +p[0] * 60 + +p[1]; }
+    var opens = mins(el.dataset.opens), closes = mins(el.dataset.closes);
+    var now = new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Kolkata' }));
+    var day = now.getDay(), m = now.getHours() * 60 + now.getMinutes();
+    var open = day !== 0 && m >= opens && m < closes;
+    var text = open ? el.dataset.open
+      : (day !== 0 && m < opens) ? el.dataset.opensToday
+      : (day === 0 || day === 6) ? el.dataset.opensMonday
+      : el.dataset.opensTomorrow;
+    el.querySelector('span').textContent = text;
+    el.classList.toggle('is-open', open);
+  })();
+</script>
 
 <section class="section section-alt" aria-labelledby="about-title">
   <div class="container statement">
