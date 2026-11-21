@@ -21,7 +21,7 @@ about_doctor: true
     <p class="lead">A dermatologist and skin specialist with over 10 years of experience, combining academic excellence, clinical expertise, research and a passion for aesthetic medicine.</p>
     <p class="doctor-creds icon-line">{% include icon.html name="graduation" %}<span>{{ quals_html }} · <span class="nowrap">{{ clinic.doctor.registration }}</span></span></p>
     {% include contact-buttons.html %}
-    <p class="social-link"><a href="{{ clinic.instagram }}" rel="noopener" target="_blank">{% include icon.html name="instagram" %}<span>Instagram</span><span class="social-handle">@{{ clinic.instagram_handle }}</span></a></p>
+    <p class="social-link"><a href="{{ clinic.instagram }}" rel="noopener" target="_blank">{% include icon.html name="instagram" %}<span class="visually-hidden">Instagram: </span><span class="social-handle">@{{ clinic.instagram_handle }}</span></a></p>
   </div>
 </section>
 

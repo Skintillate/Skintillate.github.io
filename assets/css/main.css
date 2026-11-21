@@ -267,13 +267,12 @@ h3 { font-size: 1.45rem; }
 .icon-line { display: flex; gap: .7em; align-items: flex-start; }
 .icon-line .icon { margin-top: .32em; color: var(--sage); }
 
-/* A secondary social link under the contact buttons: set apart from them, full 48px tap height,
-   and the handle's underline sits below its underscores so they stay readable. */
+/* A secondary social link under the contact buttons, styled like the footer's: icon and handle in the link
+   colour, underlined on hover only. Set apart from the buttons, with a full 48px tap height; the hover
+   underline sits below the handle's underscores so they stay readable. */
 .social-link { margin: 12px 0 0; }
-.social-link a { display: inline-flex; align-items: center; gap: .5em; min-height: 48px; color: var(--muted); text-decoration: none; }
-.social-link .icon { color: var(--sage); }
-.social-handle { color: var(--rose); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .32em; text-decoration-skip-ink: none; }
-.social-link a:hover .social-handle { color: var(--rose-dark); }
+.social-link a { display: inline-flex; align-items: center; gap: .4em; min-height: 48px; text-decoration: none; }
+.social-link a:hover .social-handle { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .32em; text-decoration-skip-ink: none; }
 .hours { width: 100%; border-collapse: collapse; }
 .hours th, .hours td { text-align: left; padding: 8px 0; border-bottom: 1px solid var(--line); font-weight: 400; }
 .hours td { text-align: right; }
