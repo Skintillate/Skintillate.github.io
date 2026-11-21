@@ -46,7 +46,7 @@
       "medicalSpecialty": "Dermatology",
       "isAcceptingNewPatients": true,
       "areaServed": { "@type": "City", "name": "Salem" },
-      "sameAs": [{{ clinic.instagram | jsonify }}, {{ clinic.maps_url | jsonify }}],
+      "sameAs": [{{ clinic.instagram | jsonify }}, {{ clinic.maps_url | jsonify }}, {{ clinic.listings.practo | jsonify }}, {{ clinic.listings.justdial | jsonify }}],
       "employee": { "@id": {{ doctor_id | jsonify }} },
       "availableService": [
         {%- for s in site.data.services %}
@@ -87,7 +87,7 @@
         }
       ],
       "knowsAbout": ["Dermatology", "Dermatologic surgery", "Aesthetic dermatology", "Lasers in dermatology", "Hair and nail disorders"],
-      "sameAs": [{{ clinic.instagram | jsonify }}]
+      "sameAs": [{{ clinic.instagram | jsonify }}, {{ clinic.doctor_listings.hexahealth | jsonify }}]
     },
     {
       "@type": "WebSite",

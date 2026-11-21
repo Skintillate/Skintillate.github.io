@@ -19,6 +19,8 @@ The treatment pages are general patient information reviewed by Dr. Kiruthika. T
 - Opening hours: {{ t.hours_days }}, {{ t.hours_time }}. {{ t.closed_day }}: {{ t.closed | downcase }}.
 - Google Maps: {{ c.maps_url }}
 - Instagram: {{ c.instagram }}
+- Practo: {{ c.listings.practo }}
+- Justdial: {{ c.listings.justdial }}
 - Doctor: {{ c.doctor.name }}, {{ c.doctor.qualifications }}. {{ c.doctor.registration }}.
 
 ## Main pages

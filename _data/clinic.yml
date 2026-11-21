@@ -12,6 +12,12 @@ whatsapp_message: Hello, I would like to book an appointment at Skintillate Skin
 email: kiruthikaskintillate@gmail.com
 instagram: https://www.instagram.com/dr_kiruthika_skintillate
 instagram_handle: dr_kiruthika_skintillate
+# Third-party listings we do not control. Used for schema sameAs and llms.txt only.
+listings:
+  practo: https://www.practo.com/salem/clinic/dr-kiruthika-s-skintillate-skin-clinic-alagapuram/about
+  justdial: https://www.justdial.com/Salem/Dr-Kiruthikas-Skintillate-Skin-Clinic-Opposite-Draupadi-Amman-Temple-Alagapuram/0427PX427-X427-260924100039-J6X6_BZDET
+doctor_listings:
+  hexahealth: https://www.hexahealth.com/salem/doctor/dr-s-kiruthika-dermatologist
 maps_url: https://maps.app.goo.gl/GX3gAo74VPKSAUvRA
 maps_embed: https://maps.google.com/maps?cid=8654659840743841454&z=17&output=embed
 
