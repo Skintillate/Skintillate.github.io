@@ -23,6 +23,8 @@ exclude:
   - vendor
   - README.md
   - CONTENT-REVIEW.md
+  - PRODUCT.md
+  - DESIGN.md
   - .bundle
 
 defaults:
